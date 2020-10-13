@@ -177,21 +177,18 @@ h1 {
 }
 
 .container {
-  width: 80%;
-  margin: auto;
+  width: 90%;
+  margin: 80px auto;
+}
+
+.card-header {
+  margin: 30px auto;
 }
 
 .grid-new-styles {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 40px;
-  margin-top: 40px;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 30px;
 }
 .card {
-}
-
-footer {
-  width: 100%;
-  height: 100px;
-  background-color: black;
 }
