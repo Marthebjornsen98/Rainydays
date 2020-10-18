@@ -17,26 +17,143 @@ body {
     "main"
     "footer";
 }
-
 header {
-  grid-area: header;
+  width: 100%;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+  display: grid;
+  max-width: 1200px;
+  height: 90px;
+  margin: auto;
+  grid-template-areas: "box1 box1 box3 box4";
+}
+
+.logo__container {
+  grid-area: box1;
   display: flex;
-  height: 100px;
+  align-items: center;
 }
 
-.box1 {
-  background-color: red;
-  width: 100%;
-  justify-content: flex-start;
-  align-content: flex-end;
+.logo__container--img {
+  width: 20%;
+  height: 55px;
+  cursor: pointer;
 }
 
-.box2 {
-  background-color: blue;
-  width: 100%;
+.search {
+  grid-area: box3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 15px;
 }
 
-.box3 {
-  background-color: pink;
+.search__box {
+  border: none;
+  height: 50px;
+  width: 60%;
+  border-bottom: solid 3px #ffeb00;
+  position: relative;
+  display: flex;
+}
+
+.fa-search {
+  position: absolute;
+  font-size: 1.1rem;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0px;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.5rem;
+  flex-direction: row;
+  display: flex;
+  grid-area: box4;
+}
+
+ul li {
+  margin: 0px 40px;
+  margin-left: 0px;
+}
+
+.fa-user,
+.fa-heart {
+  transition: all 0.3 ease 0s;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: black;
+  padding: 0px;
+}
+
+.cta {
+  background-color: rgba(255, 235, 0, 1);
+  transition: all 0.3 ease 0s;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cta:hover {
+  background-color: rgba(255, 235, 0, 0.8);
+}
+
+.sub__menu {
+  display: flex;
   width: 100%;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub__menu--bar {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.sub__menu--bar li {
+  margin: 0px 40px;
+  border-bottom: solid 4px white;
+}
+
+.sub__menu--items:hover {
+  font-weight: 600;
+  border-bottom: solid 4px #ffeb00;
+}
+
+.hero__img {
+  background-image: url(../img/background-image.jpg);
+  width: 100%;
+  height: 600px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  display: grid;
+  grid-template-areas: "";
 }
