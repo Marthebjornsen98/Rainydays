@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rainydays</title>
-        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
             integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     </head>
@@ -13,24 +13,37 @@
         <header>
             <div class="header__container">
                 <div class="logo__container">
-                    <img class="logo__container--img" src="img/logo_rainydays.png" alt="logo">
+                    <a href="#"><img class="logo__container--img" src="img/logo_rainydays.png" alt="logo"></a>
                 </div>
-                <div class="hamburger-menu">
-                    <label for="hamburger-menu"><i class="fa fa-bars"></i></label>
-                    <input type="checkbox" id="hamburger-menu">
+
+                <div class="nav__container">
+                    <label class="hamburger-menu" for="hamburger-menu"> <i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="hamburger-menu"/>
+
+                    <div class="nav__container--hamburger">
+                        <ul class="navigation__hamburger">
+                            <li class="list-item__hamburger"><a href="#"><i class="far fa-user"></i>Profile</a></li>
+                            <li class="list-item__hamburger"><a href="#"><i class="far fa-heart"></i>Favorites</a></li>
+                            <li class="list-item__hamburger"><a href="#"><i class="far fa-heart"></i>Bag</a></li>
+                        </ul>
+                        <a href="#"><button class="cta__nav--hamburger">Sign in</button></a>
+                    </div>
+                    <div class="nav__container--box">
+                        <div class="search">
+                            <input class="search__box" 
+                            type="text" 
+                            name="search" 
+                            placeholder="Search.." />
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <ul class="nav__ul">
+                            <li class="nav__ul--li"><a href="#"><i class="far fa-user"></i></a></li>
+                            <li class="nav__ul--li"><a href="#"><i class="far fa-heart"></i></a></li>
+                            <li class="nav__ul--li"><a href="#"><i class="far fa-heart"></i></a></li>
+                        </ul>
+                        <a href="#"><button class="cta__nav">Sign in</button></a>
+                    </div>
                 </div>
-                <div class="search">
-                    <input type="text" class="search__box" name="search" placeholder="Search.." />
-                    <i class="fas fa-search"></i>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#"><i class="far fa-user"></i></a></li>
-                        <li><a href="#"><i class="far fa-heart"></i></a></li>
-                        <li><a href="#"><i class="far fa-heart"></i></a></li>
-                    </ul>
-                    <a href="#"><button class="cta_nav">Sign in</button></a>
-                </nav>
             </div>
         </header>
 
@@ -43,23 +56,17 @@
             </div>
         </div>
 
-        <main>
-            <div class="hero__img">
-                <div class="overlay">
-                    <div class="hero__container">
-
-                            <h1>Rainydays New Styles!</h1>
-                      
-                            <button class="cta_main">Buy now</button>
-     
-                        <div class="scroll">
-                            <a class="scroll__content" href="#">Scroll Down <i class="fas fa-chevron-down"></i></a>
-                        </div>
+        <!-- <main class="hero__img">
+            <div class="overlay">
+                <div class="hero__container">
+                    <div class="hero__container--content">         
+                        <h1>Rainydays <br> New Collection!</h1>
+                        <button class="cta_main">Buy Now</button>
+                    </div>
+                    <div class="hero__container--scroll">
+                        <a class="scroll__content" href="#">Scroll Down <i class="fas fa-chevron-down"></i></a>
                     </div>
                 </div>
-            </div>
-        </main>
-
-        <footer></footer>
-    </body>
+            </div>     -->
+</body>
 </html>
