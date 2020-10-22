@@ -1,8 +1,5 @@
 @import "./partials/variables.css";
 @import "./partials/layout.css";
 @import "./partials/header.css";
-@import "./partials/footer.css";
 @import "./partials/home.css";
-@import "./partials/about.css";
-@import "./partials/contact.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
