@@ -85,7 +85,6 @@ header {
   font-weight: 400;
   font-size: 1.5rem;
   color: black;
-  padding: 0px;
 }
 
 .cta__nav {
@@ -197,10 +196,8 @@ header {
     width: 100%;
   }
 
-  .fa-user,
-  .fa-heart,
-  .fa-chevron-down {
-    margin-right: 40px;
+ .list-item__hamburger-link {
+    padding-right: 40px;
   }
 
   .fa-chevron-down {

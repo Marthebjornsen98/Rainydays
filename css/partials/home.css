@@ -76,6 +76,8 @@ h1 {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
+/* FIRST ROW CARDS */
+
 .main__container {
   grid-area: main;
   font-size: 1rem;
@@ -85,12 +87,25 @@ h1 {
   margin: auto;
   margin-top: 50px;
   grid-template-areas:
-    "headline headline headline headline"
-    "card1 card2 card3 card4";
+    "headline1 headline1 headline1 headline2"
+    "card1 card2 card3 card4"
+    "headline3 headline3 headline3 headline4"
+    "card5 card6 card7 card8";
 }
 
 .headline {
-  grid-area: headline;
+  padding-top: 30px;
+  grid-area: headline1;
+}
+
+.fa-chevron-right{
+  padding-left: 20px;
+}
+
+.view-more{
+  grid-area: headline2;
+  text-align: end;
+  align-self: end;
 }
 
 .card__box {
@@ -123,7 +138,7 @@ h1 {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-.card1__img {
+.card__img {
   width: 100%;
   display: block;
   border-radius: 10px 10px 0px 0px;
@@ -147,17 +162,74 @@ h1 {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
+/* SECOND ROW CARDS */
+
+.headline__second {
+  grid-area: headline3;
+  margin-top: 40px;
+}
+
+.view-more__second{
+  grid-area: headline4;
+  text-align: end;
+  align-self: end;
+}
+
+.card5 {
+  grid-area: card5;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card6 {
+  grid-area: card6;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card7 {
+  grid-area: card7;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card8 {
+  grid-area: card8;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 1200px) {
   /* TABLET */
 
   .main__container {
     display: grid;
     width: 85%;
+    grid-gap: 15px;
     justify-content: center;
     grid-template-areas:
-      "headline headline"
-      "card1 card2"
-      "card3 card4";
+    "headline1 headline1 headline1 headline1"
+    "card1 card2 card3 card4"
+    "headline2 headline2 headline2 headline2"
+    "card5 card6 card7 card8";
+}
+
+  .card__box {
+    padding: 15px;
+  }
+
+  .card__favorites {
+    margin: 0px;
+  }
+
+  .headline__second{
+    padding-top: 50px;
+  }
+
+  .card__price, 
+  .card__price--text,
+  .card__description--text{
+    font-size: 0.9rem;
   }
 }
 
@@ -180,6 +252,7 @@ h1 {
 
   .cta__main {
     padding: 15px 30px;
+    width: 130px;
   }
 
   .hero__container--scroll {
@@ -192,24 +265,28 @@ h1 {
     width: 85%;
     justify-content: center;
     grid-template-areas:
-      "headline headline"
+      "headline1 headline1"
       "card1 card2"
-      "card3 card4";
+      "card3 card4"
+      "headline2 headline2"
+      "card5 card6"
+      "card7 card8";
   }
 
   .card1,
   .card2,
   .card3,
   .card4 {
-    width: 100%;
-    font-size: 0.85rem;
+    font-size: 0.5rem;
   }
 
   .card__box {
     padding: 10px;
   }
 
-  .card__favorites {
-    justify-items: end;
+  .card__price, 
+  .card__price--text,
+  .card__description--text{
+    font-size: 0.9rem;
   }
 }
