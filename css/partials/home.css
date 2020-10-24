@@ -4,6 +4,10 @@
   text-decoration: none;
 }
 
+main{
+  min-width: calc(100vh - 600px);
+}
+
 .homepage {
   background-color: white;
   font-family: "poppins", Arial, Helvetica;
@@ -13,7 +17,7 @@
     "sub-header sub-header sub-header"
     "hero hero hero"
     "main main main"
-    ""
+    "fall fall fall"
     "footer footer footer";
 }
 
@@ -133,6 +137,19 @@ h1 {
   grid-area: description-text;
 }
 
+.card__description--text{
+  width: fit-content;
+  border-bottom: solid 3px white;
+}
+
+.card__description--text a{
+  color: black;
+}
+
+.card__description--text:hover{
+  border-bottom: solid 3px #FFEB00;
+}
+
 .card1 {
   grid-area: card1;
   border-radius: 10px;
@@ -141,7 +158,6 @@ h1 {
 
 .card__img {
   width: 100%;
-  display: block;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -200,24 +216,157 @@ h1 {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-.fall-arrivals{
-  grid-area: main;
-  display: grid;
+/* FALL CONTAINER */
+
+.fall-arrivals__container{
+  grid-area: fall;
   width: 85%;
-  margin: auto;
-  height: 500px;
+  margin: 80px auto;
+  display: grid;
   grid-template-areas:
-  "img1 img2";
+  "content content"
+  "fall-img1 fall-img2";
+}
+
+.fall-arrivals__img1--box{
+  grid-area: fall-img1;
 }
 
 .fall-arrivals__img1{
-  grid-area: img1;
-  background-color: green;
+  width: 100%;
+  height: auto;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.fall-arrivals__img2--box{
+  grid-area: fall-img2;
 }
 
 .fall-arrivals__img2{
-  grid-area: img2;
-  background-color: red;
+  width: 100%;
+  height: auto;
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* FOOTER */
+
+footer{
+  grid-area: footer;
+  width: 100%;
+  height: auto;
+  background-color: rgb(242, 241, 242);
+}
+
+.footer__container{
+  width: 85%;
+  margin: auto;
+  justify-items: center;
+  margin-top: 80px;
+  padding: 50px 0px;
+  display: grid;
+  grid-template-areas: 
+  "contact about information benefits";
+}
+
+.footer__contact{
+  grid-area: contact;
+}
+
+.footer__about{
+  grid-area: about;
+}
+
+.footer__information{
+  grid-area: information;
+}
+
+.footer__benefits{
+  grid-area: benefits;
+}
+
+.footer__item{
+  list-style: none;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.footer__item:hover{
+  font-weight: 600;
+}
+
+.footer__headline{
+  margin-bottom: 30px;
+}
+
+.fa-undo-alt, 
+.fa-calendar-check{
+  font-size: 1.5rem;
+  padding-right: 40px;
+  margin-top: 10px;
+}
+
+.fa-truck{
+  font-size: 1.3rem;
+  padding-right: 36px;
+}
+
+.social-media{
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+.fa-instagram,
+.fa-facebook-square,
+.fa-snapchat-square{
+  padding-right: 20px;
+}
+
+.sub-footer{
+  background-color: #FFEB00;
+  height: 60px;
+  width: 100%;
+}
+
+.sub-footer a{
+  color: black;
+}
+
+.sub-footer__container{
+  display: grid;
+  width: 85%;
+  height: 60px;
+  margin: auto;
+  font-size: 0.8rem;
+  align-items: center;
+  grid-template-areas: 
+  "copyright terms";
+}
+
+.sub-footer__container--copyright{
+  grid-area: copyright;
+  text-align: start;
+}
+
+.sub-footer__container--terms{
+  grid-area: terms;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.line-between{
+  width: 0px;
+  height: 20px;
+  border: solid 2px black;
+  justify-content: end;
+  margin: 0px 40px;
+}
+
+.copyright:hover, 
+.terms:hover, 
+.privacy:hover{
+  font-weight: 600;
 }
 
 
@@ -253,6 +402,11 @@ h1 {
   .card__description--text{
     font-size: 0.9rem;
   }
+
+  .fa-chevron-down{
+        color: black;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -287,10 +441,10 @@ h1 {
     width: 85%;
     justify-content: center;
     grid-template-areas:
-      "headline1 headline1"
+      "headline1 headline2"
       "card1 card2"
       "card3 card4"
-      "headline2 headline2"
+      "headline3 headline4"
       "card5 card6"
       "card7 card8";
   }
@@ -310,5 +464,35 @@ h1 {
   .card__price--text,
   .card__description--text{
     font-size: 0.9rem;
+  }
+
+  .fa-heart, .fa-chevron-down, .fa-user {
+    margin: 0px;
+    color: black;
+  }
+
+  footer{
+    height: auto;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  .footer__container{
+    grid-row-gap: 50px;
+    grid-template-areas: 
+    "contact" 
+    "about"
+    "information" 
+    "benefits"
+    "social";
+  }
+
+  .footer__container{
+    justify-items: start;
+    padding-left: 50px;
+  }
+
+  .fa-truck, .fa-undo-alt, .fa-calendar-check{
+    display: none;
   }
 }
