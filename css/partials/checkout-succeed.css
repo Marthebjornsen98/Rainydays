@@ -1,3 +1,47 @@
-*{
-    margin: 0px;
+.checkout__container{
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "confirmation"
+    "umbrella"
+    "continue-shopping";
+}
+
+.checkout{
+    grid-area: header;
+}
+
+.confirmation{
+    grid-area: confirmation;
+    margin-top: 10px;
+}
+
+.umbrella{
+    grid-area: umbrella;
+    margin-top: 100px;
+}
+
+.umbrella__img{
+    width: 70%;
+}
+
+.continue-shopping{
+    grid-area: continue-shopping;
+    margin-top: 140px;
+    font-weight: 600;
+    width: fit-content;
+    justify-self: center;
+    padding-bottom: 3px;
+}
+
+.continue-shopping a{
+    color: black;
+}
+
+.continue-shopping:hover{
+   border-bottom: solid 3px #ffeb00;
 }
