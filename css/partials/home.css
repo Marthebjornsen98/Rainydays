@@ -4,21 +4,17 @@
   text-decoration: none;
 }
 
-main{
-  min-width: calc(100vh - 600px);
-}
-
 .homepage {
   background-color: white;
   font-family: "poppins", Arial, Helvetica;
   display: grid;
   grid-template-areas:
-    "header header header"
-    "sub-header sub-header sub-header"
-    "hero hero hero"
-    "main main main"
-    "fall fall fall"
-    "footer footer footer";
+    "header"
+    "sub-header"
+    "hero"
+    "main"
+    "fall"
+    "footer";
 }
 
 .hero__img {
@@ -44,7 +40,6 @@ main{
 }
 
 .hero__container--content {
-  width: 42%;
   margin-top: 250px;
 }
 
@@ -61,7 +56,11 @@ main{
   color: white;
 }
 
-h1 {
+.fa-chevron-down {
+  padding-top: 30px;
+}
+
+.homepage__header {
   color: white;
   justify-content: flex-start;
   margin-bottom: 20px;
@@ -83,7 +82,7 @@ h1 {
 
 /* FIRST ROW CARDS */
 
-.main__container {
+.card__container {
   grid-area: main;
   font-size: 1rem;
   display: grid;
@@ -96,21 +95,21 @@ h1 {
     "card1 card2 card3 card4"
     "headline3 headline3 headline3 headline4"
     "card5 card6 card7 card8";
-}
+} 
 
 .headline {
-  padding-top: 30px;
   grid-area: headline1;
 }
 
-.fa-chevron-right{
-  padding-left: 20px;
-}
-
-.view-more{
+.view-more {
   grid-area: headline2;
+  cursor: pointer;
   text-align: end;
   align-self: end;
+}
+
+.fa-chevron-right {
+  padding-left: 20px;
 }
 
 .card__box {
@@ -137,17 +136,17 @@ h1 {
   grid-area: description-text;
 }
 
-.card__description--text{
-  width: fit-content;
+.card__description--text {
   border-bottom: solid 3px white;
+  width: fit-content;
 }
 
-.card__description--text a{
+.card__description--text a {
   color: black;
 }
 
-.card__description--text:hover{
-  border-bottom: solid 3px #FFEB00;
+.card__description--text:hover {
+  border-bottom: solid 3px #ffeb00;
 }
 
 .card1 {
@@ -156,7 +155,8 @@ h1 {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-.card__img {
+.card__img{
+  height: auto;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
 }
@@ -186,8 +186,9 @@ h1 {
   margin-top: 40px;
 }
 
-.view-more__second{
+.view-more__second {
   grid-area: headline4;
+  cursor: pointer;
   text-align: end;
   align-self: end;
 }
@@ -218,144 +219,161 @@ h1 {
 
 /* FALL CONTAINER */
 
-.fall-arrivals__container{
+.fall__container {
   grid-area: fall;
   width: 85%;
   margin: 80px auto;
+  position: relative;
   display: grid;
   grid-template-areas:
-  "content content"
-  "fall-img1 fall-img2";
+    "content content"
+    "fall-img1 fall-img2";
 }
 
-.fall-arrivals__img1--box{
+.fall__container--content{
+  position: absolute;
+  font-size: 2rem;
+  text-align: center;
+  top: 15%;
+  left: 37%;
+}
+
+.cta__fall{
+  padding: 15px 50px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 25px;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  border: solid 2px rgb(242, 241, 242);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.fall__img1--box {
   grid-area: fall-img1;
 }
 
-.fall-arrivals__img1{
-  width: 100%;
-  height: auto;
-  border-radius: 10px 0px 0px 10px;
-}
-
-.fall-arrivals__img2--box{
+.fall__img2--box {
   grid-area: fall-img2;
 }
 
-.fall-arrivals__img2{
+.fall__img1 {
   width: 100%;
-  height: auto;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.fall__img2 {
+  width: 100%;
   border-radius: 0px 10px 10px 0px;
 }
 
 /* FOOTER */
 
-footer{
+footer {
   grid-area: footer;
   width: 100%;
   height: auto;
   background-color: rgb(242, 241, 242);
 }
 
-.footer__container{
+.footer__container {
   width: 85%;
   margin: auto;
   justify-items: center;
-  margin-top: 80px;
   padding: 50px 0px;
   display: grid;
-  grid-template-areas: 
-  "contact about information benefits";
+  grid-template-areas: "contact about information benefits";
 }
 
-.footer__contact{
+.footer__contact {
   grid-area: contact;
 }
 
-.footer__about{
+.footer__about {
   grid-area: about;
 }
 
-.footer__information{
+.footer__information {
   grid-area: information;
 }
 
-.footer__benefits{
+.footer__benefits {
   grid-area: benefits;
 }
 
-.footer__item{
+.footer__item {
   list-style: none;
   font-size: 0.9rem;
   margin-top: 15px;
   cursor: pointer;
 }
 
-.footer__item:hover{
+.footer__item:hover {
   font-weight: 600;
 }
 
-.footer__headline{
+.footer__headline {
   margin-bottom: 30px;
 }
 
-.fa-undo-alt, 
-.fa-calendar-check{
+.fa-undo-alt,
+.fa-calendar-check {
   font-size: 1.5rem;
   padding-right: 40px;
   margin-top: 10px;
 }
 
-.fa-truck{
+.fa-truck {
   font-size: 1.3rem;
   padding-right: 36px;
 }
 
-.social-media{
+.social-media {
   margin-top: 30px;
   font-size: 1.5rem;
 }
 
 .fa-instagram,
 .fa-facebook-square,
-.fa-snapchat-square{
+.fa-snapchat-square {
   padding-right: 20px;
 }
 
-.sub-footer{
-  background-color: #FFEB00;
+.sub-footer {
+  background-color: #ffeb00;
   height: 60px;
   width: 100%;
 }
 
-.sub-footer a{
+.sub-footer a {
   color: black;
 }
 
-.sub-footer__container{
+.sub-footer__container {
   display: grid;
   width: 85%;
   height: 60px;
   margin: auto;
   font-size: 0.8rem;
   align-items: center;
-  grid-template-areas: 
-  "copyright terms";
+  grid-template-areas: "copyright terms";
 }
 
-.sub-footer__container--copyright{
+.sub-footer__container--copyright {
   grid-area: copyright;
   text-align: start;
 }
 
-.sub-footer__container--terms{
+.sub-footer__container--terms {
   grid-area: terms;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.line-between{
+.line-between {
   width: 0px;
   height: 20px;
   border: solid 2px black;
@@ -363,27 +381,13 @@ footer{
   margin: 0px 40px;
 }
 
-.copyright:hover, 
-.terms:hover, 
-.privacy:hover{
+.terms:hover,
+.privacy:hover {
   font-weight: 600;
 }
 
-
 @media (max-width: 1200px) {
   /* TABLET */
-
-  .main__container {
-    display: grid;
-    width: 85%;
-    grid-gap: 15px;
-    justify-content: center;
-    grid-template-areas:
-    "headline1 headline1 headline1 headline3"
-    "card1 card2 card3 card4"
-    "headline3 headline3 headline3 headline4"
-    "card5 card6 card7 card8";
-}
 
   .card__box {
     padding: 15px;
@@ -393,20 +397,20 @@ footer{
     margin: 0px;
   }
 
-  .headline__second{
+  .headline__second {
     padding-top: 50px;
   }
 
-  .card__price, 
+  .card__price,
   .card__price--text,
-  .card__description--text{
+  .card__description--text {
     font-size: 0.9rem;
+    width: fit-content;
   }
 
-  .fa-chevron-down{
-        color: black;
+  .fa-chevron-down {
+    color: black;
   }
-
 }
 
 @media (max-width: 767px) {
@@ -414,7 +418,7 @@ footer{
 
   .hero__container {
     justify-content: flex-start;
-    margin-left: 50px;
+    padding-left: 50px;
   }
 
   .hero__container--content {
@@ -422,7 +426,7 @@ footer{
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: 300px;
   }
 
@@ -435,10 +439,11 @@ footer{
     display: none;
   }
 
-  .main__container {
+  .card__container {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 30px;
     width: 85%;
+    margin-top: 50px;
     justify-content: center;
     grid-template-areas:
       "headline1 headline2"
@@ -460,39 +465,43 @@ footer{
     padding: 10px;
   }
 
-  .card__price, 
+  .card__price,
   .card__price--text,
-  .card__description--text{
+  .card__description--text {
     font-size: 0.9rem;
   }
 
-  .fa-heart, .fa-chevron-down, .fa-user {
+  .fa-heart,
+  .fa-chevron-down,
+  .fa-user {
     margin: 0px;
     color: black;
   }
 
-  footer{
+  footer {
     height: auto;
     padding-bottom: 50px;
     width: 100%;
   }
 
-  .footer__container{
+  .footer__container {
     grid-row-gap: 50px;
-    grid-template-areas: 
-    "contact" 
-    "about"
-    "information" 
-    "benefits"
-    "social";
+    grid-template-areas:
+      "contact"
+      "about"
+      "information"
+      "benefits"
+      "social";
   }
 
-  .footer__container{
+  .footer__container {
     justify-items: start;
     padding-left: 50px;
   }
 
-  .fa-truck, .fa-undo-alt, .fa-calendar-check{
+  .fa-truck,
+  .fa-undo-alt,
+  .fa-calendar-check {
     display: none;
   }
 }
