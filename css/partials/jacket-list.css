@@ -1,0 +1,217 @@
+a{
+    color: black;
+}
+.jacket-page{
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: 
+    "sort-by sort-by"
+    "sidebar jackets";
+}
+
+.sidebar-filter{
+    grid-area: sidebar;
+    width: 200px;
+}
+
+.filter-ul{
+    margin-bottom: 40px;
+}
+
+.filter-header{
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: solid 3px #ffeb00;
+}
+
+.filter-item{
+    margin-bottom: 10px;
+}
+
+.filter-item:hover{
+    font-weight: 600;
+}
+
+.average-price{
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+    color: rgba(0,0,0, 0.6);
+}
+
+/* NEED HELP WITH THIS */
+
+.checkbox{
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.checkbox:hover{
+    font-weight: 600;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+    height: 16px;
+    width: 16px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* CARDS */
+
+.jackets{
+    grid-area: jackets;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 60px;
+    width: 950px;
+    margin-top: 0px;
+    margin-left: 70px;
+    grid-template-areas:
+    "dropdown dropdown dropdown dropdown"
+    "jacket-1 jacket-2 jacket-3 jacket-4"
+    "jacket-5 jacket-6 jacket-7 jacket-8"
+    "jacket-9 jacket-10 jacket-11 jacket-12";
+}
+
+/* DROPDOWN MENU */
+
+.sort-by{
+    grid-area: dropdown;
+    justify-self: end;
+}
+
+.dropdown{
+    width: 220px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: solid 1px rgba(0,0,0,0.6);
+}
+
+.card1-jacket{
+    grid-area: jacket-1;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card2-jacket{
+    grid-area: jacket-2;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card3-jacket{
+    grid-area: jacket-3;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card4-jacket{
+    grid-area: jacket-4;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card5-jacket{
+    grid-area: jacket-5;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card6-jacket{
+    grid-area: jacket-6;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card7-jacket{
+    grid-area: jacket-7;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card8-jacket{
+    grid-area: jacket-8;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card9-jacket{
+    grid-area: jacket-9;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card10-jacket{
+    grid-area: jacket-10;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card11-jacket{
+    grid-area: jacket-11;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card12-jacket{
+    grid-area: jacket-12;
+    border-radius: 10px;  
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* CARD IMG CONTAINER */
+
+.card-jacket__img--container{
+    width: auto;
+}
+  
+.card-jacket__img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* CONTAINER BOX */
+
+.card-jacket__box{
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "price favorites"
+    "description description";
+}
+
+.card-jacket__favorites{
+    grid-area: favorites;
+    text-align: end;
+}
+
+.card-jacket__price{
+    font-weight: 600;
+    grid-area: price;
+}
+
+.card-jacket__description{
+    grid-area: description;
+}
+
+.card-jacket__description{
+    color: black;
+    width: fit-content;
+    border-bottom: solid 3px transparent;
+}
+
+.card-jacket__description:hover{
+    color: black;
+    border-bottom: solid 3px #ffeb00;
+}
+
+
+
+
+
+
+
