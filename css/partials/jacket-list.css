@@ -75,7 +75,6 @@ input[type=checkbox] {
     margin-right: 10px;
     height: 16px;
     width: 16px;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* CARDS */
@@ -279,15 +278,16 @@ input[type=checkbox] {
         width: 90%;
         margin: auto;
         margin-top: 30px;
-        grid-row-gap: 20px;
+        grid-row-gap: 10px;
         display: grid;
         grid-template-areas:
-        "dropdown dropdown"
-        "sidebar jackets"
+        "filter filter"
+        "jackets jackets"
     }
 
     .sort-by{
         grid-area: dropdown;
+        display: none;
     }
 
     .dropdown{
@@ -299,31 +299,27 @@ input[type=checkbox] {
     } 
 
     .sidebar__mobile{
-        display: block;
-        width: 70%;
-        margin-top: 20px;
-        margin-right: 50px;
-        grid-area: sidebar;
-        font-size: 1rem;
-    }
-
-    .sidebar__mobile--box{
-        margin-bottom: 30px;
+        grid-area: filter;
         width: 100%;
+        display: flex;
+        font-size: 1rem;
         justify-content: space-between;
     }
 
     .filter-item__mobile{
         font-weight: 600;
-        padding-bottom: 3px;
-        border-bottom: solid 2px #ffeb00;
+        font-size: 0.875;
+    }
+
+    .fa-angle-down{
+        padding-left: 15px;
     }
 
     .jackets{
         grid-area: jackets;
         display: grid;
         grid-column-gap: 20px;
-        grid-row-gap: 50px;
+        grid-row-gap: 20px;
         width: 100%;
         margin-top: 20px;
         margin-left: 0px;
@@ -335,6 +331,19 @@ input[type=checkbox] {
         "jacket-9 jacket-10"
         "jacket-11 jacket-12"
         "new-page new-page";
+    }
+
+}
+
+/* ASK CAMERON ABOUT THIS */
+
+@media (max-width: 500px) {
+    /* SMALL MOBILE */
+
+    .sidebar__mobile{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
 }
