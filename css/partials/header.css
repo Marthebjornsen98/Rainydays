@@ -214,7 +214,6 @@ header {
   .list-item__hamburger,
   .list-item__hamburger--shop {
     padding: 30px 40px;
-    text-decoration: none;
     border-bottom: solid 2px rgba(230, 230, 230, 0.8);
   }
 
