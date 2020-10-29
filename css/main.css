@@ -2,6 +2,9 @@
 @import "./partials/layout.css";
 @import "./partials/header.css";
 @import "./partials/home.css";
-@import "./partials/checkout-succeed.css";
-@import "./partials/jacket-list.css";
 @import "./partials/jacket.css";
+@import "./partials/jacket-list.css";
+@import "./partials/checkout.css";
+@import "./partials/checkout-succeed.css";
+@import "./partials/footer.css";
+@import "./partials/media.css";

@@ -1,0 +1,165 @@
+/* HOME MEDIA */
+
+
+@media (max-width: 991px) {
+    /* TABLET */
+  
+    .card__box {
+      padding: 15px;
+    }
+  
+    .headline__second {
+      padding-top: 50px;
+    }
+  
+    .card__price,
+    .card__price--text,
+    .card__description--text {
+      font-size: 0.9rem;
+      width: fit-content;
+    }
+  
+    .fa-chevron-down {
+      color: black;
+    }
+  
+    .headline__second{
+      padding-top: 0px;
+      margin-top: 30px;
+    }
+  
+    .card__img--container{
+      width: auto;
+    }
+  }
+  
+  
+  @media (max-width: 767px) {
+    /* MOBILE */
+  
+    .hero__container {
+      justify-content: flex-start;
+      margin-left: 50px;
+    }
+  
+    .hero__container--content {
+      margin-top: 280px;
+    }
+  
+    .homepage__header{
+      width: 100%;
+      font-size: 1.5rem;
+    }
+  
+    .cta__main {
+      padding: 15px 30px;
+      width: 130px;
+    }
+  
+    .hero__container--scroll {
+      display: none;
+    }
+  
+    .fa-heart,
+    .fa-chevron-down,
+    .fa-user {
+      margin: 0px;
+      color: black;
+    }
+  
+    .card__container{
+      width: 85%;
+      grid-gap: 15px;
+      margin: auto;
+      margin-top: 50px;
+      display: grid;
+      grid-template-areas: 
+      "header1 header2"
+      "card1 card2"
+      "card3 card4"
+      "header3 header4"
+      "card5 card6"
+      "card7 card8";
+    }
+  
+    .card__img--container{
+      width: auto;
+    }
+  
+    .card__price,
+    .card__price--text,
+    .card__description--text {
+      font-size: 0.9rem;
+    } 
+  
+    .headline, 
+    .headline__second{
+      font-size: 0.9rem;
+    }
+  
+    .view-more, 
+    .view-more__second{
+      font-size: 0.8rem;
+    }
+    
+    h3{
+      font-size: 1.5rem;
+    }
+  
+    .cta__fall{
+      padding: 15px 30px;
+      margin-top: 20px;
+    }
+  
+    footer {
+      height: auto;
+      width: 100%;
+    }
+  
+    .footer__container {
+      grid-gap: 30px;
+      grid-template-areas:
+        "contact"
+        "about"
+        "information"
+        "benefits"
+        "social";
+    }
+  
+    .footer__headline,
+    .social-media{
+      margin-bottom: 0px;
+    }
+  
+    .footer__benefits{
+      margin-bottom: 20px;
+    }
+  
+    .footer__container {
+      justify-items: start;
+      padding-left: 50px;
+    }
+  
+    .fa-truck,
+    .fa-undo-alt,
+    .fa-calendar-check {
+      display: none;
+    }
+  
+    .sub-footer__container--terms{
+      justify-items: end;
+    }
+  
+    .terms{
+      text-align: end;
+    }
+  
+    .line-between{
+      margin: 0px 20px;
+    }
+  
+    .terms,
+    .privacy{
+      width: 80px;
+    }
+  }

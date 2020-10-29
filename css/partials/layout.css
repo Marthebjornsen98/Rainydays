@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "poppins", Arial, Helvetica;
+  }
+  
+  .homepage {
+    background-color: white;
+    font-family: "poppins", Arial, Helvetica;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "sub-header"
+      "hero"
+      "main"
+      "fall"
+      "footer"
+      "sub-footer";
+  }
