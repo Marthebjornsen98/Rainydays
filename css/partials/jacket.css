@@ -295,6 +295,7 @@
 
 .suggestion__headline{
     grid-area: jacket__cards--headline;
+    font-size: 1.5rem;
 }
 
 .suggestion__view-more{
@@ -408,7 +409,8 @@
     /* MOBILE */
 
     .jacket__container{
-        justify-items: center;
+        width: 78%;
+        justify-items: start;
         grid-template-areas: 
         "jacket-img"
         "jacket-information";
@@ -434,7 +436,56 @@
 
     .jacket__info{
         width: 80%;
-        margin-top: 50px;
+        margin-top: 30px;
     }
+
+    .details__container{
+        width: 78%;
+        margin-top: 50px;
+        grid-column-gap: 40px;
+        grid-template-areas:
+        "product-header size-fit-header" 
+        "product size-fit" 
+        "about-header about-header"
+        "about about";
+    }
+
+    .about__header{
+        width: 100%;
+    }
+    
+    .about__container{
+        width: 100%;
+    }
+
+    .product__header--text,
+    .size-fit__header--text{
+        font-size: 1rem;
+    }
+
+    .about__header--text{
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    .suggestion__container{
+        width: 80%;
+        margin-top: 50px;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "jacket__cards--headline  view-more"
+        "suggestion__card1 suggestion__card2"
+        "suggestion__card3 suggestion__card4"
+        ;
+    }
+
+    .suggestion__headline{
+        font-size: 1rem;
+    }
+    
+    .suggestion__view-more{
+        font-size: 0.875rem;
+    }
+
 
 }
