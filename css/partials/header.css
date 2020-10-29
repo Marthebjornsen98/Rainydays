@@ -7,8 +7,7 @@ header {
 
 .header__container {
   display: flex;
-  flex-direction: row;
-  max-width: 1200px;
+  width: 90%;
   margin: auto;
   height: 90px;
 }
@@ -17,6 +16,7 @@ header {
 
 .logo__container {
   display: flex;
+  margin-left: 50px;
   width: 100px;
   align-items: center;
 }
@@ -155,7 +155,7 @@ header {
   border-bottom: solid 4px #ffeb00;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   /* Tablet */
 
   .logo__container {

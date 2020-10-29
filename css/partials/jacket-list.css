@@ -303,7 +303,7 @@ input[type=checkbox] {
         width: 100%;
         display: flex;
         font-size: 1rem;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .filter-item__mobile{
@@ -337,14 +337,30 @@ input[type=checkbox] {
 
 /* ASK CAMERON ABOUT THIS */
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
     /* SMALL MOBILE */
 
+    .jackets{
+        grid-template-areas: 
+        "jacket-1" 
+        "jacket-2"
+        "jacket-3" 
+        "jacket-4"
+        "jacket-5" 
+        "jacket-6"
+        "jacket-7" 
+        "jacket-8"
+        "jacket-9" 
+        "jacket-10"
+        "jacket-11" 
+        "jacket-12"
+        "new-page";
+    }
+
     .sidebar__mobile{
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-evenly;
     }
+
 
 }
 

@@ -1,7 +1,9 @@
 /* JACKET IMG SECTION */
 .jacket__container{
     width: 85%;
+    grid-column-gap: 70px;
     margin: auto;
+    grid-area: jacket-img;
     margin-top: 50px;
     display: grid;
     grid-template-areas: 
@@ -9,9 +11,7 @@
 }
 
 .jacket__img--container{
-    grid-area: jacket-img;
     display: grid;
-    width: 85%;
     grid-template-areas: 
     "img-column big-img";
 }
@@ -30,16 +30,14 @@
 
 .jacket__img--column{
     grid-area: img-column;
-    display: block;
-    justify-self: end;
-    align-self: center;
-    margin-right: 30px;
-    width: 100px;
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 90px;
 }
 
 .jacket__img{
-    width: 90px;
-    height: 90px;
+    width: 85px;
+    height: 85px;
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -48,8 +46,7 @@
 
 .jacket__info{
     grid-area: jacket-information;
-    width: 85%;
-    margin-left: 100px;
+    width: 90%;
 }
 
 .raincoat-information{
@@ -110,9 +107,13 @@
 }
 
 .raincoat__description{
-    width: 80%;
+    width: 100%;
     margin-top: 10px;
     font-size: 0.875rem;
+}
+
+.raincoat__description--mobile{
+    display: none;
 }
 
 /* CHOOSE SIZE */
@@ -123,7 +124,7 @@
 
 .choose-size{
     display: flex;
-    width: 69%;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -134,6 +135,7 @@
 
 .find-size{
     border-bottom: solid 3px transparent;
+    font-size: 0.875rem;
 }
 
 .find-size:hover{
@@ -149,15 +151,15 @@
 /* SIZE BUTTONS */
 
 .size__btn--container{
-    width: 70%;
     display: flex;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 25px;
     justify-content: space-between;
 }
 
 .size__btn{
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
@@ -175,17 +177,17 @@
 /* CTA BUTTONS */
 
 .bag__btn{
-    width: 70%;
-    display: flex;
+    width: 100%;
     margin-top: 30px;
+    margin-right: 50px;
 }
 
 .bag__cta{
+    width: 100%;
+    height: 60px;
     font-weight: 600;
     font-size: 1rem;
     border-radius: 10px;
-    width: 420px;
-    height: 60px;
     cursor: pointer;
     color: black;
     border: none;
@@ -196,7 +198,7 @@
 /* DETAILS SECTION */
 
 .details__container{
-    width: 70%;
+    width: 85%;
     margin: auto;
     margin-top: 100px;
     justify-content: center;
@@ -255,7 +257,6 @@
     grid-area: about-header;
     color: rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
-    width: auto;
     width: 231px;
 }
 
@@ -336,4 +337,104 @@
     border-radius: 10px 10px 0px 0px;
 }
 
+@media (max-width: 991px) {
+    /* TABLET */
 
+    .jacket__container{
+        grid-column-gap: 50px;
+    }
+
+    .jacket-big__container{
+        width: 300px;
+    }
+
+    .jacket__img--column{
+        margin-right: 10px;
+        margin-top: 0px;
+        width: 65px;
+    }
+
+    .jacket__img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .raincoat-information{
+        font-size: 1.25rem;
+    }
+
+    .review__jacket{
+        font-size: 0.75rem;
+    }
+
+    .raincoat__description{
+        display: none;
+    }
+
+    .raincoat-description__container{
+        margin-top: 30px;
+    }
+
+    .raincoat__description--mobile{
+        display: block;
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+
+    .light{
+        margin-left: 5px;
+        font-size: 0.75rem;
+    }
+
+    .size__btn--container{
+        margin-top: 20px;
+        flex-wrap: wrap;
+        min-width: 300px;
+    }
+
+    .size__btn{
+        margin-top: 0px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .details__container{
+        width: 80%;
+        grid-column-gap: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* MOBILE */
+
+    .jacket__container{
+        justify-items: center;
+        grid-template-areas: 
+        "jacket-img"
+        "jacket-information";
+    }
+
+    .jacket__img--container{
+        grid-template-areas: 
+        "big-img"
+        "img-column";
+    }
+    
+    .jacket-big__container{
+        width: 300px;
+    }
+
+    .jacket__img--column{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .jacket__info{
+        width: 80%;
+        margin-top: 50px;
+    }
+
+}
