@@ -15,7 +15,7 @@
     <header>
         <div class="header__container">
             <div class="logo__container">
-                <a href="index.html"><img class="logo__container--img" src="img/logo_rainydays.png" alt="logo" /></a>
+                <a href="#"><img class="logo__container--img" src="img/logo_rainydays.png" alt="logo" /></a>
             </div>
 
             <div class="nav__container">
@@ -39,7 +39,7 @@
                             <a class="list-item__hamburger-link" href="#"><i class="far fa-heart"></i></a>Bag
                         </li>
                     </ul>
-                    <a href="#"><button class="cta__nav--hamburger">Sign in</button></a>
+                    <button class="cta__nav--hamburger">Sign in</button>
                 </div>
 
                 <div class="nav__container--box">
@@ -58,389 +58,382 @@
                             <a href="#"><i class="far fa-heart"></i></a>
                         </li>
                     </ul>
-                    <a href="#"><button class="cta__nav">Sign in</button></a>
+                    <button class="cta__nav">Sign in</button>
                 </div>
             </div>
         </div>
     </header>
-
     <div class="sub__menu">
         <div class="sub__menu--bar">
-            <a href="jacket-list.html">
-                <li class="sub__menu--items">New In</li>
-            </a>
-            <a href="jacket-list.html">
-                <li class="sub__menu--items">Men</li>
-            </a>
-            <a href="jacket-list.html">
-                <li class="sub__menu--items">Women</li>
-            </a>
-            <a href="jacket-list.html">
-                <li class="sub__menu--items">Outlet</li>
-            </a>
-
+            <ul>
+                <li class="sub__menu--items"><a class="active" href="jacket-list.html">New In</a></li>
+                <li class="sub__menu--items"><a href="jacket-list.html">Men</a></li>
+                <li class="sub__menu--items"><a href="jacket-list.html">Women</a></li>
+                <li class="sub__menu--items"><a href="jacket-list.html">Outlet</a></li>
+            </ul>
         </div>
     </div>
+    <main>
+        <div class="jacket-page">
+            <div class="sort-by">
+                <select class="dropdown" name="sort-by" id="sort-by">
+                    <option value="whats-new">What´s New</option>
+                    <option value="best-matches">Best matches</option>
+                    <option value="price-low-to-high">Price low to high</option>
+                    <option value="price-hight-to-low">Price high to low</option>
+                    <option value="sale">Sale</option>
+                </select>
+            </div>
+            <div class="sidebar__mobile">
+                <div class="sidebar__mobile--box">
+                    <a href="#">
+                        <p class="filter-item__mobile">Categories<i class="fas fa-angle-down"></i></p>
+                    </a>
+                </div>
+                <div class="sidebar__mobile--box">
+                    <a href="#">
+                        <p class="filter-item__mobile">Sort By<i class="fas fa-angle-down"></i></p>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-filter">
+                <div class="categories-filter">
+                    <ul class="filter-ul">
+                        <li class="filter-header">Categories</li>
 
-    <div class="jacket-page">
-        <div class="sort-by">
-            <select class="dropdown" name="sort-by" id="sort-by">
-                <option value="whats-new">What´s New</option>
-                <option value="best-matches">Best matches</option>
-                <option value="price-low-to-high">Price low to high</option>
-                <option value="price-hight-to-low">Price high to low</option>
-                <option value="sale">Sale</option>
-            </select>
+                        <a href="#">
+                            <li class="filter-item">Short Raincoats</li>
+                        </a>
+                        <a href="#">
+                            <li class="filter-item">Long Raincoats</li>
+                        </a>
+                        <a href="#">
+                            <li class="filter-item">Classic Raincoats</li>
+                        </a>
+                        <a href="#">
+                            <li class="filter-item">Ponchos</li>
+                        </a>
+                        <a href="#">
+                            <li class="filter-item">Outlet</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="price-filter">
+                    <ul class="filter-ul">
+                        <li class="filter-header">Price</li>
+                        <p class="average-price">Average price: €125</p>
+                    </ul>
+                </div>
+                <div class="size-filter">
+                    <ul class="filter-ul">
+                        <li class="filter-header">Size</li>
+                        <div class="checkbox">
+                            <input type="checkbox" name="x-small" value="x-small" id="x-small">
+                            <label for="size">X-Small</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="small" value="small" id="small">
+                            <label for="size">Small</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="media" value="medium" id="medium">
+                            <label for="size">Medium</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="large" value="large" id="large">
+                            <label for="size">Large</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="x-large" value="x-large" id="x-large">
+                            <label for="size">X-Large</label>
+                        </div>
+                    </ul>
+                </div>
+                <div class="color-filter">
+                    <ul>
+                        <li class="filter-header">Color</li>
+                        <div class="checkbox">
+                            <input type="checkbox" name="white" value="white" id="white">
+                            <label for="size">White</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="black" value="black" id="black">
+                            <label for="size">Black</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="navy" value="navy" id="navy">
+                            <label for="size">Navy</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="light-blue" value="light-blue" id="light-blue">
+                            <label for="size">light-blue</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="pink" value="pink" id="pink">
+                            <label for="size">Pink</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="grey" value="grey" id="grey">
+                            <label for="size">Grey</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="multi" value="multi" id="multi">
+                            <label for="size">Multi</label>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="jackets">
+                <div class="card1-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/jacket-1.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€150</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">Long Classic Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card2-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/jacket-2.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€80</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">Short Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card3-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/jacket-3.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€150</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">Long Classic Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card4-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/jacket-4.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€100</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">Long Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card5-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/jacket-5.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€130</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">Long Camo Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card6-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/jacket-6.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€100</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">Long Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card7-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/jacket-7.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€100</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">Short Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card8-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/jacket-8.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€125</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">Long Classic Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card9-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/jacket-9.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€150</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">Long Classic Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card10-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/jacket-10.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€80</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">Short Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card11-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/jacket-11.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€100</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">See Through Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card12-jacket">
+                    <div class="card-jacket__img--container">
+                        <img class="card-jacket__img" src="img/card-image7.jpg" alt="yellow raincoat" />
+                    </div>
+                    <div class="card-jacket__box">
+                        <div class="card-jacket__favorites">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-jacket__price">
+                            <p class="card-jacket__price--text">€150</p>
+                        </div>
+                        <div class="card-jacket__description">
+                            <p class="card-jacket__description--text">
+                                <a href="jacket.html">Long Raincoat</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-page">
+                    <div class="new-page__content">
+                        <a href="#"><i class="fas fa-chevron-left"></i></a>
+                        <p class="new-page__text">Page 1 of 14</p>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="sidebar__mobile">
-            <div class="sidebar__mobile--box">
-                <a href="#">
-                    <p class="filter-item__mobile">Categories<i class="fas fa-angle-down"></i></p>
-                </a>
-            </div>
-            <div class="sidebar__mobile--box">
-                <a href="#">
-                    <p class="filter-item__mobile">Sort By<i class="fas fa-angle-down"></i></p>
-                </a>
-            </div>
-        </div>
-
-        <div class="sidebar-filter">
-            <div class="categories-filter">
-                <ul class="filter-ul">
-                    <li class="filter-header">Categories</li>
-
-                    <a href="#">
-                        <li class="filter-item">Short Raincoats</li>
-                    </a>
-                    <a href="#">
-                        <li class="filter-item">Long Raincoats</li>
-                    </a>
-                    <a href="#">
-                        <li class="filter-item">Classic Raincoats</li>
-                    </a>
-                    <a href="#">
-                        <li class="filter-item">Ponchos</li>
-                    </a>
-                    <a href="#">
-                        <li class="filter-item">Outlet</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="price-filter">
-                <ul class="filter-ul">
-                    <li class="filter-header">Price</li>
-                    <p class="average-price">Average price: €125</p>
-                </ul>
-            </div>
-            <div class="size-filter">
-                <ul class="filter-ul">
-                    <li class="filter-header">Size</li>
-                    <div class="checkbox">
-                        <input type="checkbox" name="x-small" value="x-small" id="x-small">
-                        <label for="size">X-Small</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="small" value="small" id="small">
-                        <label for="size">Small</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="media" value="medium" id="medium">
-                        <label for="size">Medium</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="large" value="large" id="large">
-                        <label for="size">Large</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="x-large" value="x-large" id="x-large">
-                        <label for="size">X-Large</label>
-                    </div>
-                </ul>
-            </div>
-            <div class="color-filter">
-                <ul>
-                    <li class="filter-header">Color</li>
-                    <div class="checkbox">
-                        <input type="checkbox" name="white" value="white" id="white">
-                        <label for="size">White</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="black" value="black" id="black">
-                        <label for="size">Black</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="navy" value="navy" id="navy">
-                        <label for="size">Navy</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="light-blue" value="light-blue" id="light-blue">
-                        <label for="size">light-blue</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="pink" value="pink" id="pink">
-                        <label for="size">Pink</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="grey" value="grey" id="grey">
-                        <label for="size">Grey</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="multi" value="multi" id="multi">
-                        <label for="size">Multi</label>
-                    </div>
-                </ul>
-            </div>
-        </div>
-
-        <div class="jackets">
-            <div class="card1-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/jacket-1.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€150</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">Long Classic Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card2-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/jacket-2.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€80</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">Short Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card3-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/jacket-3.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€150</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">Long Classic Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card4-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/jacket-4.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€100</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">Long Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card5-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/jacket-5.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€130</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">Long Camo Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card6-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/jacket-6.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€100</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">Long Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card7-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/jacket-7.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€100</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">Short Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card8-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/jacket-8.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€125</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">Long Classic Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card9-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/jacket-9.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€150</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">Long Classic Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card10-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/jacket-10.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€80</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">Short Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card11-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/jacket-11.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€100</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">See Through Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card12-jacket">
-                <div class="card-jacket__img--container">
-                    <img class="card-jacket__img" src="img/card-image7.jpg" alt="yellow raincoat" />
-                </div>
-                <div class="card-jacket__box">
-                    <div class="card-jacket__favorites">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="card-jacket__price">
-                        <p class="card-jacket__price--text">€150</p>
-                    </div>
-                    <div class="card-jacket__description">
-                        <p class="card-jacket__description--text">
-                            <a href="jacket.html">Long Raincoat</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="new-page">
-                <div class="new-page__content">
-                    <a href="#"><i class="fas fa-chevron-left"></i></a>
-                    <p class="new-page__text">Page 1 of 14</p>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
     <footer>
         <div class="footer__container">
             <div class="footer__contact">
                 <h4 class="footer__headline">Contact Us</h4>
-                <li class="footer__item"><a href="#"></a>Contact ut</li>
-                <li class="footer__item"><a href="#"></a>Q&A</li>
-                <li class="footer__item"><a href="#"></a>Giftcard</li>
-                <li class="footer__item"><a href="#"></a>Stores</li>
-                <li class="footer__item"><a href="#"></a>Collaborations</li>
-                <li class="footer__item"><a href="#"></a>Subscribe</li>
+                <ul>
+                    <li class="footer__item"><a href="contact.html">Contact ut</a></li>
+                    <li class="footer__item"><a href="#">Q&A</a></li>
+                    <li class="footer__item"><a href="#">Giftcard</a></li>
+                    <li class="footer__item"><a href="#">Stores</a></li>
+                    <li class="footer__item"><a href="#">Collaborations</a></li>
+                    <li class="footer__item"><a href="#">Subscribe</a></li>
+                </ul>
                 <div class="social-media">
                     <i class="fab fa-facebook-square"></i>
                     <i class="fab fa-snapchat-square"></i>
@@ -449,34 +442,39 @@
             </div>
             <div class="footer__about">
                 <h4 class="footer__headline">About Rainydays</h4>
-                <li class="footer__item"><a href="#"></a>About Rainydays</li>
-                <li class="footer__item"><a href="#"></a>Who are we?</li>
-                <li class="footer__item"><a href="#"></a>Career at Rainydays</li>
-                <li class="footer__item"><a href="#"></a>Sustainable</li>
-                <li class="footer__item"><a href="#"></a>Instagram Shop</li>
-                <li class="footer__item"><a href="#"></a>Press</li>
+                <ul>
+                    <li class="footer__item"><a href="about.html">About Rainydays</a></li>
+                    <li class="footer__item"><a href="#">Who are we?</a></li>
+                    <li class="footer__item"><a href="#">Career at Rainydays</a></li>
+                    <li class="footer__item"><a href="#">Sustainable</a></li>
+                    <li class="footer__item"><a href="#">Instagram Shop</a></li>
+                    <li class="footer__item"><a href="#">Press</a></li>
+                </ul>
             </div>
             <div class="footer__information">
                 <h4 class="footer__headline">Information</h4>
-                <li class="footer__item"><a href="#"></a>Payment</li>
-                <li class="footer__item"><a href="#"></a>Shipping</li>
-                <li class="footer__item"><a href="#"></a>Delivery & Returns</li>
-                <li class="footer__item"><a href="#"></a>Track Order</li>
-                <li class="footer__item"><a href="#"></a>Discount Codes</li>
-                <li class="footer__item"><a href="#"></a>Help</li>
+                <ul>
+                    <li class="footer__item"><a href="#">Payment</a></li>
+                    <li class="footer__item"><a href="#">Shipping</a></li>
+                    <li class="footer__item"><a href="#">Delivery & Returns</a></li>
+                    <li class="footer__item"><a href="#">Track Order</a></li>
+                    <li class="footer__item"><a href="#">Discount Codes</a></li>
+                    <li class="footer__item"><a href="#">Help</a></li>
+                </ul>
             </div>
             <div class="footer__benefits">
                 <h4 class="footer__headline">Benefits</h4>
-                <li class="footer__item">
-                    <a href="#"></a><i class="fas fa-truck"></i>Free Shipping
-                </li>
-                <li class="footer__item">
-                    <a href="#"></a><i class="fas fa-undo-alt"></i>Free Returns
-                </li>
-                <li class="footer__item">
-                    <a href="#"></a><i class="far fa-calendar-check"></i>100 Days Open
-                    Purchase
-                </li>
+                <ul>
+                    <li class="footer__item">
+                        <a href="#"><i class="fas fa-truck"></i>Free Shipping</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#"><i class="fas fa-undo-alt"></i>Free Returns</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#"><i class="far fa-calendar-check"></i>100 Days Open Purchase</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -493,9 +491,6 @@
             </div>
         </div>
     </footer>
-
-
-
 </body>
 
 </html>
