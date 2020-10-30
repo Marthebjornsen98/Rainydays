@@ -11,8 +11,8 @@
 
 .checkout-header__container{
     margin: auto;
-    margin-top: 50px;
     width: 85%;
+    margin-top: 50px;
 }
 
 .checkout-header{
@@ -41,13 +41,106 @@
     "checkout__cta";
 }
 
+/* CHECKOUT GRID */
+
 .checkout__product{
     grid-area: checkout__product;
-    height: 250px;
-    width: 650px;
-    background-color: lightblue;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 100%;
     display: grid;
+    grid-template-areas:
+    "product__header1 product__header1 product__header2 product__header3 product__header4"
+    "underline underline underline underline underline"
+    "product__picture product__picture product__size product__qty bin";
 }
+
+/* PRODUCT */
+
+.product__headline--product{
+    grid-area: product__header1;
+    justify-self: start;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.product__headline--item{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.product__headline--size{
+    grid-area: product__header2;
+    justify-self: end;
+    margin: 20px 0px;
+}
+
+.product__headline--qty{
+    grid-area: product__header3;
+    justify-self: end;
+    margin: 20px 0px;
+}
+
+/* LINE BETWEEN */
+
+.line{
+    grid-area: underline;
+    width: 85%;
+    margin: auto;
+    height: 0px;
+    border: solid 3px #ffeb00;
+}
+
+/* CHECKOUT PICTURE AND INFORMATION */
+
+.checkout__picture{
+    grid-area: product__picture;
+    display: flex;
+    margin-top: 40px;
+    justify-self: start;
+    width: 150px;
+    margin-left: 65px;
+}
+
+.checkout__picture--img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.checkout__information{
+    margin-left: 30px;
+    width: 200px;
+    grid-area: product__picture;
+}
+
+.checkout__title{
+    width: 200px;
+    margin-top: 5px;
+}
+
+.checkout__color{
+    margin-top: 5px;
+    width: 200px;
+    font-size: 0.875rem;
+}
+
+.checkout__price{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.checkout__size--container{
+    grid-area: product__size;
+    width: 100px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.fa-angle-down{
+    margin-left: 10px;
+}
+
+/* ADDRESS */
 
 .checkout__address{
     grid-area: checkout__address;
@@ -56,12 +149,16 @@
     background-color: lightpink;
 }
 
+/* PAYMENT */
+
 .checkout__payment{
     grid-area: checkout__payment;
     height: 300px;
     width: 650px;
     background-color: lightgray;
 }
+
+/* DELIVERY */
 
 .checkout__delivery{
     grid-area: checkout__delivery;
@@ -70,16 +167,19 @@
     background-color: lightgreen;
 }
 
+/* CHECKOUT CTA */
+
 .checkout__cta{
     grid-area: checkout__cta;
 }
+
+/* SUB FOOTER */
 
 .sub-total__container{
     grid-area: sub-total;
 }
 
 .sub-total__container{
-    /* position: fixed; */
     justify-self: end;
     height: 350px;
     width: 350px;
