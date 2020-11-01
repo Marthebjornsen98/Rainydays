@@ -24,10 +24,10 @@
     margin-top: 50px;
 }
 
-/* main{
+.main{
     margin: auto;
     width: 60%;
-} */
+}
 
 .checkout-page--container{
     grid-row-gap: 30px;
