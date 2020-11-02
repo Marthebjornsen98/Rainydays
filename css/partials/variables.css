@@ -1,0 +1,12 @@
+:root {
+    --font-color: #000000;
+    --font__opacity: rgba(0, 0, 0, 0.5);
+    --cta__font-size: 1rem;
+    --background-color: #ffeb00;
+    --links__font-weight: 600;
+    --light__font-weight: 300;
+    --border-radius__cards: 10px;
+    --box-border: solid 2px rgba(0,0,0,0.1);
+    --box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    --border-bottom: solid 3px #ffeb00;
+  }

@@ -1,4 +1,4 @@
-/* HERO */
+/* HERO IMG CONTAINER*/
 
 .hero__img {
   grid-area: hero;
@@ -44,26 +44,16 @@
   padding-top: 30px;
 }
 
-/* THIS IS H1 */
-
-.homepage__header {
-  color: white;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-}
-
 .cta__main {
-  display: flex;
-  background-color: rgba(255, 235, 0, 1);
-  transition: all 0.3 ease 0s;
-  color: black;
-  font-weight: 600;
-  font-size: 1rem;
   padding: 15px 35px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  font-size: var(--cta__font-size);
+  font-weight: var(--links__font-weight);
+  color: var(--font-color);
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
 }
 
 /* FIRST ROW CARDS */
@@ -82,52 +72,48 @@
   "card5 card6 card7 card8";
 }
 
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8{
+  border-radius: var(--border-radius__cards);  
+  box-shadow: var(--box-shadow);
+}
+
 .card1{
   grid-area: card1;
-  border-radius: 10px;  
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card2{
   grid-area: card2;
-  border-radius: 10px;  
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card3{
   grid-area: card3;
-  border-radius: 10px;  
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card4{
   grid-area: card4;
-  border-radius: 10px;  
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card5{
   grid-area: card5;
-  border-radius: 10px;  
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card6{
-  grid-area: card6;
-  border-radius: 10px;  
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  grid-area: card6;;
 }
 
 .card7{
   grid-area: card7;
-  border-radius: 10px;  
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card8{
   grid-area: card8;
-  border-radius: 10px;  
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* HEADLINE ROW ONE */
@@ -142,10 +128,6 @@
   align-self: end;
 }
 
-.view-more a{
-  color: black;
-}
-
 /* HEADLINE ROW TWO */
 
 .headline__second{
@@ -157,10 +139,6 @@
   grid-area: header4;
   text-align: end;
   align-self: end;
-}
-
-.view-more__second a{
-  color: black;
 }
 
 .fa-chevron-right{
@@ -202,138 +180,13 @@
   grid-area: description;
 }
 
-.card__description--text a{
-  color: black;
+.card__description--text{
+  border-bottom: solid 3px white;
+  width: fit-content;
 }
 
-.card__description--text a:hover{
-  color: black;
-  border-bottom: solid 3px #ffeb00;
-}
-
-/* FOOTER */
-
-footer {
-  grid-area: footer;
-  width: 100%;
-  margin-top: 80px;
-  background-color: rgb(242, 241, 242);
-}
-
-.footer__container {
-  width: 85%;
-  margin: auto;
-  justify-items: center;
-  padding-top: 50px;
-  display: grid;
-  grid-template-areas: "contact about information benefits";
-}
-
-.footer__contact {
-  grid-area: contact;
-}
-
-.footer__about {
-  grid-area: about;
-}
-
-.footer__information {
-  grid-area: information;
-}
-
-.footer__benefits {
-  grid-area: benefits;
-}
-
-.footer__item {
-  list-style: none;
-  font-size: 0.9rem;
-  margin-top: 15px;
-  cursor: pointer;
-}
-
-.footer__item:hover {
-  font-weight: 600;
-}
-
-.footer__headline {
-  margin-bottom: 30px;
-}
-
-/* FOOTER ICONS */
-
-.fa-undo-alt,
-.fa-calendar-check {
-  font-size: 1.5rem;
-  padding-right: 40px;
-  margin-top: 10px;
-}
-
-.fa-truck {
-  font-size: 1.3rem;
-  padding-right: 36px;
-}
-
-.social-media {
-  margin-top: 30px;
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-
-.fa-instagram,
-.fa-facebook-square,
-.fa-snapchat-square {
-  padding-right: 20px;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-/* SUB FOOTER */
-
-.sub-footer {
-  background-color: #ffeb00;
-  height: 60px;
-  width: 100%;
-  grid-area: sub-footer;
-}
-
-.sub-footer a {
-  color: black;
-}
-
-.sub-footer__container {
-  display: grid;
-  width: 85%;
-  height: 60px;
-  margin: auto;
-  font-size: 0.8rem;
-  align-items: center;
-  grid-template-areas: "copyright terms";
-}
-
-.sub-footer__container--copyright {
-  grid-area: copyright;
-  text-align: start;
-}
-
-.sub-footer__container--terms {
-  grid-area: terms;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.line-between {
-  width: 0px;
-  height: 20px;
-  border: solid 2px black;
-  justify-content: end;
-  margin: 0px 40px;
-}
-
-.terms:hover,
-.privacy:hover {
-  font-weight: 600;
+.card__description--text:hover{
+  border-bottom: var(--border-bottom);
 }
 
 

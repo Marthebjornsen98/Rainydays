@@ -1,6 +1,4 @@
-a{
-    color: black;
-}
+/* JACKET PAGE CONTAINER */
 
 .jacket-page{
     width: 85%;
@@ -8,27 +6,33 @@ a{
     margin-top: 30px;
     display: grid;
     grid-template-areas:
-    "dropdown1 dropdown2"
+    "dropdown dropdown"
     "sort-by sort-by"
     "sidebar jackets";
 }
 
 .sort-by{
-    grid-area: dropdown2;
+    grid-area: dropdown;
     justify-self: end;
 }
+
+/* DROPDOWN MENU */
 
 .dropdown{
     width: 220px;
     height: 45px;
     padding: 10px 20px;
     border-radius: 8px;
-    border: solid 2px rgba(0,0,0,0.1);
+    border: var(--box-border);
 }
+
+/* SIDEBAR CONTAINER */
 
 .sidebar__mobile{
     display: none;
 }
+
+/* SIDEBAR FILTER*/
 
 .sidebar-filter{
     grid-area: sidebar;
@@ -40,10 +44,10 @@ a{
 }
 
 .filter-header{
-    font-weight: 600;
     padding-bottom: 5px;
     margin-bottom: 20px;
-    border-bottom: solid 3px #ffeb00;
+    font-weight: var(--links__font-weight);
+    border-bottom: var(--border-bottom);
 }
 
 .filter-item{
@@ -51,16 +55,16 @@ a{
 }
 
 .filter-item:hover{
-    font-weight: 600;
+    font-weight: var(--links__font-weight);
 }
 
 .average-price{
-    font-size: 0.875rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     color: rgba(0,0,0, 0.6);
 }
 
-/* NEED HELP WITH THIS */
+/* checkbox CONTAINER */
 
 .checkbox{
     align-content: center;
@@ -68,7 +72,7 @@ a{
 }
 
 .checkbox:hover{
-    font-weight: 600;
+    font-weight: var(--links__font-weight);
 }
 
 input[type=checkbox] {
@@ -82,8 +86,7 @@ input[type=checkbox] {
 .jackets{
     grid-area: jackets;
     display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 60px;
+    grid-gap: 60px 20px;
     width: 93%;
     margin-top: 20px;
     margin-left: 70px;
@@ -94,76 +97,69 @@ input[type=checkbox] {
     "new-page new-page new-page new-page";
 }
 
+.card1-jacket,
+.card2-jacket,
+.card3-jacket,
+.card4-jacket,
+.card5-jacket,
+.card6-jacket,
+.card7-jacket,
+.card8-jacket,
+.card9-jacket,
+.card10-jacket,
+.card11-jacket,
+.card12-jacket{
+    border-radius: var(--border-shadow);
+    box-shadow: var(--box-shadow);
+    border-radius: 0px 10px 10px 0px;
+}
+
 .card1-jacket{
     grid-area: jacket-1;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card2-jacket{
     grid-area: jacket-2;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card3-jacket{
     grid-area: jacket-3;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card4-jacket{
     grid-area: jacket-4;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card5-jacket{
     grid-area: jacket-5;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card6-jacket{
     grid-area: jacket-6;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card7-jacket{
     grid-area: jacket-7;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card8-jacket{
     grid-area: jacket-8;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card9-jacket{
     grid-area: jacket-9;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card10-jacket{
     grid-area: jacket-10;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card11-jacket{
     grid-area: jacket-11;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card12-jacket{
     grid-area: jacket-12;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* CARD IMG CONTAINER */
@@ -193,8 +189,8 @@ input[type=checkbox] {
 }
 
 .card-jacket__price{
-    font-weight: 600;
     grid-area: price;
+    font-weight: var(--links__font-weight);
 }
 
 .card-jacket__description{
@@ -202,14 +198,13 @@ input[type=checkbox] {
 }
 
 .card-jacket__description{
-    color: black;
     width: fit-content;
-    border-bottom: solid 3px transparent;
+    border-bottom: solid 3px white;
 }
 
 .card-jacket__description:hover{
     color: black;
-    border-bottom: solid 3px #ffeb00;
+    border-bottom: var(--border-bottom);
 }
 
 /* NUMBER AT THE BOTTOM */
@@ -228,142 +223,12 @@ input[type=checkbox] {
 
 .fa-chevron-left{
     padding-right: 20px;
-    color: rgba(0,0,0,0.5);
+    color: var(--font__opacity);
 }
 
 .fa-chevron-right{
     cursor: pointer;
 }
-
-@media (max-width: 991px) {
-    /* TABLET */
-
-    .jacket-page{
-        width: 90%;
-    }
-
-    .jackets{
-        grid-area: jackets;
-        display: grid;
-        grid-column-gap: 20px;
-        grid-row-gap: 60px;
-        width: 90%;
-        margin-top: 20px;
-        margin-left: 70px;
-        grid-template-areas: 
-        "jacket-1 jacket-2 jacket-3"
-        "jacket-4 jacket-5 jacket-6"
-        "jacket-7 jacket-8 jacket-9"
-        "jacket-10 jacket-11 jacket-12"
-        "new-page new-page new-page";
-    }
-
-    .dropdown{
-        width: 186px;
-    }
-
-    .new-page{
-        margin-top: 0px;
-    }
-}
-
-@media (max-width: 767px) {
-    /* MOBILE */
-
-    .sidebar-filter{
-        display: none;
-    }
-
-    .jacket-page{
-        width: 90%;
-        margin: auto;
-        margin-top: 30px;
-        grid-row-gap: 10px;
-        display: grid;
-        grid-template-areas:
-        "filter filter"
-        "jackets jackets"
-    }
-
-    .sort-by{
-        grid-area: dropdown;
-        display: none;
-    }
-
-    .dropdown{
-        width: 130px;            
-        height: 40px;
-        padding: 8px 10px 10px 10px;
-        border-radius: 8px;           
-        border: solid 2px rgba(0,0,0,0.1);
-    } 
-
-    .sidebar__mobile{
-        grid-area: filter;
-        width: 100%;
-        display: flex;
-        font-size: 1rem;
-        justify-content: space-evenly;
-    }
-
-    .filter-item__mobile{
-        font-weight: 600;
-        font-size: 0.875;
-    }
-
-    .fa-angle-down{
-        padding-left: 15px;
-    }
-
-    .jackets{
-        grid-area: jackets;
-        display: grid;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0px;
-        grid-template-areas: 
-        "jacket-1 jacket-2"
-        "jacket-3 jacket-4"
-        "jacket-5 jacket-6"
-        "jacket-7 jacket-8"
-        "jacket-9 jacket-10"
-        "jacket-11 jacket-12"
-        "new-page new-page";
-    }
-
-}
-
-/* ASK CAMERON ABOUT THIS */
-
-@media (max-width: 320px) {
-    /* SMALL MOBILE */
-
-    .jackets{
-        grid-template-areas: 
-        "jacket-1" 
-        "jacket-2"
-        "jacket-3" 
-        "jacket-4"
-        "jacket-5" 
-        "jacket-6"
-        "jacket-7" 
-        "jacket-8"
-        "jacket-9" 
-        "jacket-10"
-        "jacket-11" 
-        "jacket-12"
-        "new-page";
-    }
-
-    .sidebar__mobile{
-        justify-content: space-evenly;
-    }
-
-
-}
-
 
 
 

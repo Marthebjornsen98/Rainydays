@@ -1,7 +1,7 @@
 /* HEADER CHANGES */
 
 .yellow{
-    background-color: #ffeb00;
+    background-color: var(--background-color);
     width: 100%;
     height: 200px;
 }
@@ -20,16 +20,6 @@
 .brand__container--header{
     width: 85%;
     margin: auto;
-}
-
-.about__header--container{
-    width: 85%;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.about{
-    font-size: 1.5rem;
 }
 
 .about__container{
@@ -56,7 +46,7 @@
 .about__body-text,
 .brand__body-text{
     font-size: 0.875rem;
-    font-weight: 300;
+    font-weight: var(--light__font-weight);
     margin-bottom: 40px;
 }
 
@@ -130,53 +120,25 @@
     height: 45px;
     padding-left: 20px;
     border-radius: 10px 0px 0px 10px; 
-    border: solid 1px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    border: var(--box-border);
+    box-shadow: var(--box-shadow);
 }
 
 .lets-talk__body-text{
     margin-bottom: 20px;
-    font-weight: 300;
+    font-weight: var(--light__font-weight);
     font-size: 0.875rem;
 }
 
 .lets-talk__box{
     width: 45px;
-    height: 45px;
+    height: 48px;
     text-align: center;
     border-radius: 0px 10px 10px 0px; 
-    background-color: #ffeb00;
+    background-color: var(--background-color);
 }
 
 .fa-angle-right{
     margin-top: 9px;
     font-size: 1.5rem;
-
-}
-
-@media (max-width: 991px) {
-    /* TABLET */
-
-    .about__container{
-        grid-template-areas: 
-        "about-text" 
-        "about-img";
-    }
-}
-@media (max-width: 767px) {
-    /* MOBILE */
-
-    .about-img__container{
-        width: 320px;
-    }
-    
-    .brand__container{
-        grid-template-areas: 
-        "header"
-        "brand-text1" 
-        "brand-text2"
-        "brand-text3" 
-        "brand-text4";
-    }
-
 }

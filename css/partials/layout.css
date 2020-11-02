@@ -1,22 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    list-style: none;
-    font-family: "poppins", Arial, Helvetica;
-  }
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-family: "poppins", Arial, Helvetica;
+}
   
-  .homepage {
-    background-color: white;
-    font-family: "poppins", Arial, Helvetica;
-    display: grid;
-    grid-template-areas:
-      "header"
-      "sub-header"
-      "hero"
-      "main"
-      "footer"
-      "sub-footer";
-  }
+body {
+  background-color: white;
+  font-family: "poppins", Arial, Helvetica;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "sub-header"
+    "hero"
+    "main"
+    "footer"
+    "sub-footer";
+}
+
+/* H1 HOME PAGE*/
+
+.homepage__header {
+  color: white;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+/* H1 JACKET LIST PAGE*/
+
+.h1-none{
+  display: none;
+}
+
+/* H1 LIST JACKET PAGE */
+
+.raincoat-information{
+  font-size: 1.5rem;
+  font-weight: var(--links__font-weight);
+}
+
+/* H1 CONTACT AND ABOUT PAGE */
+
+.about__header--container{
+  width: 85%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.about{
+  font-size: 1.5rem;
+}
+
+/* H1 CHECKOUT PAGE */
+
+.checkout-header{
+  width: 40%;
+  margin-left: 150px;
+}
+
+.checkout-header__text{
+  font-size: 1.5rem;
+  font-weight: var(--links__font-weight);
+}
+
+
+/* H1 CHECKOUT SUCCEED PAGE */
+
+.checkout{
+  grid-area: header;
+}
+
+.confirmation{
+  grid-area: confirmation;
+  margin-top: 10px;
+}
+
+
+/* LINKS */
+
+a{
+  color: black;
+}

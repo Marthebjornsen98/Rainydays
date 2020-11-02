@@ -11,7 +11,7 @@
 
 .question__header{
     font-size: 1.25;
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--font__opacity);
 }
 
 .next-line{
@@ -28,8 +28,8 @@
     height: 45px;
     width: 63%;
     padding-left: 20px;
-    border: solid 1px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    border: var(--box-border);
+    box-shadow: var(--box-shadow);
 }
 
 /* FAG SECTION */
@@ -53,7 +53,7 @@
     margin-bottom: 40px;
     cursor: pointer;
     padding-bottom: 10px;
-    border-bottom: solid 3px #ffeb00;
+    border-bottom: var(--border-bottom);
 }
 
 .faq__item-text{
@@ -61,15 +61,14 @@
 }
 
 .faq__item-text:hover{
-    font-weight: 600;
+    font-weight: var(--links__font-weight);
 }
 
 /* CATEGORIES SECTION */
 
 .categories__container{
-    grid-gap: 40px 40px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    grid-gap: 40px;
+    margin: 80px 0px;
     display: grid;
     grid-template-areas:
     "categories-header categories-header"
@@ -141,11 +140,11 @@
     margin-bottom: 20px;
     padding-bottom: 10px;
     cursor: pointer;
-    border-bottom: solid 3px #ffeb00;
+    border-bottom: var(--border-bottom);
 }
 
 .categories__item:hover{
-    font-weight: 600;
+    font-weight: var(--links__font-weight);
 }
 
 /* CONTACT SECTION */
@@ -183,29 +182,14 @@
 
 .contact-item__bold{
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: var(--links__font-weight);
 }
 
 .contact-item__light{
     font-size: 0.875rem;
-    font-weight: 300;
+    font-weight: var(--light__font-weight);
 }
 
-@media (max-width: 991px){
-
-    .categories__container{
-        grid-template-areas:
-        "categories-header"
-        "return" 
-        "my-order"
-        "shipping" 
-        "payment";
-    }
-
-    .contact__container{
-        width: 100%;
-    }
-}
 
 
 

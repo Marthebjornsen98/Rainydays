@@ -1,0 +1,116 @@
+footer {
+    grid-area: footer;
+    width: 100%;
+    margin-top: 80px;
+    background-color: rgb(242, 241, 242);
+  }
+  
+  .footer__container {
+    width: 85%;
+    margin: auto;
+    justify-items: center;
+    padding-top: 50px;
+    display: grid;
+    grid-template-areas: "contact about information benefits";
+  }
+  
+  .footer__contact {
+    grid-area: contact;
+  }
+  
+  .footer__about {
+    grid-area: about;
+  }
+  
+  .footer__information {
+    grid-area: information;
+  }
+  
+  .footer__benefits {
+    grid-area: benefits;
+  }
+  
+  .footer__item {
+    list-style: none;
+    font-size: 1rem;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .footer__item:hover {
+    font-weight: var(--links__font-weight);
+  }
+  
+  .footer__headline {
+    margin-bottom: 30px;
+  }
+  
+  /* FOOTER ICONS */
+  
+  .fa-undo-alt,
+  .fa-calendar-check {
+    font-size: 1.5rem;
+    padding-right: 40px;
+    margin-top: 10px;
+  }
+  
+  .fa-truck {
+    font-size: 1.3rem;
+    padding-right: 36px;
+  }
+  
+  .social-media {
+    margin: 30px 0px;
+  }
+  
+  .fa-instagram,
+  .fa-facebook-square,
+  .fa-snapchat-square {
+    padding-right: 30px;
+    font-size: 1.875rem;
+    cursor: pointer;
+  }
+  
+  /* SUB FOOTER */
+  
+  .sub-footer {
+    grid-area: sub-footer;
+    height: 60px;
+    width: 100%;
+    background-color: var(--background-color);
+  }
+  
+  .sub-footer__container {
+    display: grid;
+    width: 85%;
+    height: 60px;
+    margin: auto;
+    font-size: 0.875rem;
+    align-items: center;
+    grid-template-areas: "copyright terms";
+  }
+  
+  .sub-footer__container--copyright {
+    grid-area: copyright;
+    text-align: start;
+  }
+  
+  .sub-footer__container--terms {
+    grid-area: terms;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .line-between {
+    width: 0px;
+    height: 20px;
+    border: solid 2px black;
+    justify-content: end;
+    margin: 0px 40px;
+  }
+  
+  .terms:hover,
+  .privacy:hover {
+    font-weight: 600;
+  }
