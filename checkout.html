@@ -23,109 +23,90 @@
         </div>
     </header>
 
-    <main class="main">
-        <div class="checkout-header">
-            <h1 class="checkout-header__text">Checkout</h1>
-        </div>
-        <div class="checkout-page">
-            <div class="checkout-page--container">
-                <div class="checkout__product">
-                    <div class="checkout__headline--product">
-                        <h2 class="checkout__headline--item">Product</h2>
-                    </div>
-                    <div class="checkout__headline--size">
-                        <h2 class="checkout__headline--item">Size</h2>
-                    </div>
-                    <div class="checkout__headline--qty">
-                        <h2 class="checkout__headline--item">Qty</h2>
-                    </div>
-                    <div class="line"></div>
-                    <div class="checkout__picture">
+    <main>
+        <div class="checkout__page">
+            <div class="checkout-header">
+                <h1 class="checkout-header__text">Checkout</h1>
+            </div>
+            <div class="checkout-page__container">
+                <div class="checkout__product--container">
+                    <div class="checkout__picture--container">
                         <img class="checkout__picture--img" src="img/jacket-man-big.jpg" alt="Man in blue raincoat">
-                        <div class="checkout__information">
-                            <p class="checkout__price">€100</p>
-                            <p class="checkout__title">Short Raincoat</p>
-                            <p class="checkout__color"><span class="bold">Color:</span> Navy</p>
-                        </div>
+                    </div>
+                    <div class="checkout__information">
+                        <p class="checkout__price">€100</p>
+                        <p class="checkout__title">Short Raincoat</p>
+                        <p class="checkout__color"><span class="bold">Color:</span> Navy</p>
                     </div>
                     <div class="checkout__size--container">
-                        <p class="checkout__size--text">Medium<i class="fas fa-angle-down"></i></p>
+                        <p class="checkout--text">Medium<i class="fas fa-angle-down"></i></p>
                     </div>
                     <div class="checkout__qty--container">
-                        <p class="checkout__qty--text">1<i class="fas fa-angle-down"></i></p>
+                        <p class="checkout--text">1<i class="fas fa-angle-down"></i></p>
                     </div>
                     <div class="bin">
                         <i class="far fa-trash-alt"></i>
                     </div>
                 </div>
+                <div class="checkout__address--container">
+                    <div class="checkout__address">
+                        <h2 class="checkout__sub-header">Delivery Address</h2>
 
-                <div class="checkout__address">
-                    <div class="checkout__address--container">
-                        <h2 class="checkout__headline--item">Delivery Address</h2>
                         <div class="full-name__container">
                             <h3 class="address__item">Full Name</h3>
-                            <div class="full-name__form">
-                                <input class="input-text" type="text" name="full-name">
-                            </div>
+                            <input class="address__form" type="text" name="full-name">
                         </div>
+
                         <div class="address__container">
                             <h3 class="address__item">Address</h3>
-                            <div class="address__form">
-                                <input class="input-text" type="text" name="address">
-                            </div>
+                            <input class="address__form" type="text" name="address">
                         </div>
-                        <div class="city-code__container">
+
+                        <div class="city__zip-code--container">
                             <div class="city__container">
                                 <h3 class="address__item">City</h3>
-                                <input class="city-code__input" type="text" name="city">
+                                <input class="address__form" type="text" name="city">
                             </div>
-                            <div class="code__container">
+                            <div class="zip-code__container">
                                 <h3 class="address__item">Zip Code</h3>
-                                <input class="city-code__input" type="text" name="zip-code">
+                                <input class="address__form" type="text" name="zip-code">
                             </div>
                         </div>
+
                         <div class="country__container">
                             <h3 class="address__item">Country</h3>
-                            <div class="country__form">
-                                <input class="input-text" type="text" name="country">
-                            </div>
+                            <input class="address__form" type="text" name="country">
                         </div>
+
                         <div class="remember-me">
                             <input type="checkbox" name="remember-me" value="remember-me" id="remember-me">
-                            <label for="remember-me">Remember me</label>
+                            <label class="address__item" for="remember-me">Remember me</label>
                         </div>
                     </div>
                 </div>
-
                 <div class="checkout__payment">
                     <div class="payment__container">
-                        <h2 class="checkout__headline--item">Payment type</h2>
-                        <div class="klarna__container">
-                            <div class="klarna">
-                                <img class="klarna__img" src="img/klarna.jpg" alt="klarna logo">
-                                <p class="klarna__text">Klarna invoice</p>
+                        <h2 class="checkout__sub-header">Payment type</h2>
+                        <div class="payment__box--both">
+                            <div class="payment__box">
+                                <img class="payment__img" src="img/klarna.jpg" alt="klarna logo">
+                                <p class="payment__text">Klarna invoice</p>
+                            </div>
+                            <div class="payment__box">
+                                <img class="payment__img" src="img/visa.jpg" alt="visa logo">
+                                <p class="payment__text">Add credit/debit card</p>
                             </div>
                         </div>
-                        <div class="or__container">
-                            <p class="or">Or</p>
-                        </div>
-                        <div class="visa-paypal">
-                            <div class="visa">
-                                <img class="visa__img" src="img/visa.jpg" alt="visa logo">
-                                <p class="visa__text">Add credit/debit card</p>
+
+                        <div class="payment__box--both">
+                            <div class="payment__box">
+                                <img class="payment__img" src="img/paypal.jpg" alt="paypal logo">
+                                <p class="payment__text">Paypal</p>
                             </div>
-                            <div class="line__between"></div>
-                            <div class="paypal">
-                                <img class="paypal__img" src="img/paypal.jpg" alt="paypal logo">
-                                <p class="paypal__text">Paypal</p>
+                            <div class="payment__box">
+                                <img class="payment__img" src="img/master-card.jpg" alt="master-card logo">
+                                <p class="payment__text">Master Card</p>
                             </div>
-                        </div>
-                        <h2 class="checkout__headline--item">We accept</h2>
-                        <div class="all__accept">
-                            <img class="visa__img--all" src="img/visa.jpg" alt="visa logo">
-                            <img class="paypal__img--all" src="img/paypal.jpg" alt="paypal logo">
-                            <img class="master-card__img" src="img/master-card.jpg" alt="master-card logo">
-                            <img class="klarna__img--all" src="img/klarna.jpg" alt="klarna logo">
                         </div>
                     </div>
                 </div>
@@ -133,7 +114,7 @@
                     <div class="delivery">
                         <img class="delivery__truck" src="img/truck.jpg" alt="delivery truck">
                         <div class="delivery__text">
-                            <h2 class="checkout__headline--item">Expected delivery</h2>
+                            <h2 class="checkout__sub-header">Expected delivery</h2>
                             <p class="delivery__date">Mon, 02. 11 - Wen, 04. 11</p>
                         </div>
                     </div>

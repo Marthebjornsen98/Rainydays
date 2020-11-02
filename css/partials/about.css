@@ -169,6 +169,7 @@
     .about-img__container{
         width: 320px;
     }
+    
     .brand__container{
         grid-template-areas: 
         "header"
