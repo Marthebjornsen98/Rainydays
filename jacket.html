@@ -48,34 +48,40 @@
                     </div>
                     <ul class="nav__ul">
                         <li class="nav__ul--li">
-                            <a href="#"><i class="far fa-user"></i></a></li>
+                            <a href="#"><i class="far fa-user"></i></a>
+                        </li>
                         <li class="nav__ul--li">
-                            <a href="#"><i class="far fa-heart"></i></a></li>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </li>
                         <li class="nav__ul--li">
-                            <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a></li>
+                            <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
                     </ul>
                     <button class="cta__nav">Sign in</button>
                 </div>
             </div>
         </div>
     </header>
+
     <main>
+        <div class="loading"></div>
         <div class="jacket__container">
             <div class="jacket__img--container">
-                <div class="jacket-big__container">
-                    <img class="jacket-big__img" src="img/jacket-man-big.jpg" alt="Man in blue raincoat">
-                </div>
                 <div class="jacket__img--column">
                     <img class="jacket__img" src="img/jacket-man1.jpg" alt="Man in blue raincoat">
                     <img class="jacket__img" src="img/jacket-man2.jpg" alt="Man in blue raincoat">
                     <img class="jacket__img" src="img/jacket-man3.jpg" alt="Man in blue raincoat">
                     <img class="jacket__img" src="img/jacket-7.jpg" alt="Man in blue raincoat">
                 </div>
+                <div class="jacket-big__container">
+                    <div class="jacket-big__img"></div>
+                </div>
             </div>
+
             <div class="jacket__info">
                 <div class="raincoat-information__container">
-                    <h1 class="raincoat-information">Short Raincoat</h1>
-                    <p class="price__jacket">€100</p>
+                    <h1 class="raincoat-information"></h1>
+                    <p class="price__jacket"></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -88,18 +94,11 @@
                         <div class="line-between__jacket"></div>
                         <p class="review"><a href="#">Write a review</a></p>
                     </div>
-
                 </div>
+
                 <div class="raincoat-description__container">
-                    <div class="raincoat__color">
-                        <p class="raincoat__color--text"><span class="bold">Color:</span> Navy</p>
-                    </div>
-                    <div class="raincoat__description">
-                        Rainydays authentic menswear collection is heavily influenced by
-                        the brand’s historical roots in sport and classic, urban menswear.
-                        The range, including the iconic slim fit polo shirt, blends British
-                        style with the edge and attitude.
-                    </div>
+                    <div class="raincoat__color"></div>
+                    <div class="raincoat__description"></div>
                     <div class="raincoat__description--mobile">
                         Rainydays authentic menswear collection is heavily influenced by
                         the brand’s historical.. <span class="light">Read more</span>
@@ -320,6 +319,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/details.js"></script>
 </body>
 
 </html>

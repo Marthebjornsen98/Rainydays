@@ -1,23 +1,16 @@
 /* JACKET IMG SECTION */
 .jacket__container{
-    width: 85%;
-    grid-column-gap: 70px;
-    margin: auto;
-    margin-top: 50px;
-    display: grid;
-    grid-template-areas: 
-    "jacket-img jacket-information";
+    display: flex;
+    justify-content: space-between;
+    max-width: 1250px;
+    margin: 50px auto 0px auto;
 }
 
 .jacket__img--container{
-    grid-area: jacket-img;
-    display: grid;
-    grid-template-areas: 
-    "img-column big-img";
+    display: flex;
 }
 
 .jacket-big__container{
-    grid-area: big-img;
     width: 400px;
 }
 
@@ -29,7 +22,6 @@
 /* SMALL IMG COLUMN */
 
 .jacket__img--column{
-    grid-area: img-column;
     margin-top: 50px;
     margin-right: 20px;
     width: 90px;
@@ -43,10 +35,8 @@
 }
 
 /* INFORMATION JACKET */
-
 .jacket__info{
-    grid-area: jacket-information;
-    width: 90%;
+    max-width: 50%;
 }
 
 /* PRICE, STARS AND REVIEW JACKET */

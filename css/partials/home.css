@@ -23,8 +23,12 @@
   justify-content: space-between;
 }
 
+.homepage__header {
+  font-size: 3.125rem;
+}
+
 .hero__container--content {
-  margin-top: 250px;
+  margin-top: 180px;
 }
 
 .hero__container--scroll {

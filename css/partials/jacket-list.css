@@ -1,22 +1,17 @@
 /* JACKET PAGE CONTAINER */
-
-.jacket-page{
+.jacket__page{
     width: 85%;
-    margin: auto;
-    margin-top: 30px;
-    display: grid;
-    grid-template-areas:
-    "dropdown dropdown"
-    "sort-by sort-by"
-    "sidebar jackets";
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .sort-by{
-    grid-area: dropdown;
-    justify-self: end;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 30px;
 }
-
-/* DROPDOWN MENU */
 
 .dropdown{
     width: 220px;
@@ -26,16 +21,70 @@
     border: var(--box-border);
 }
 
+.filter__container {
+    width: 30%;
+}
+
+.jacket-list__container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.jacket__card {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    height: auto;
+    margin-bottom: 50px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.jacket-card__img--container{
+    width: 100%;
+    height: auto;
+}
+  
+.jacket-card__img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.jacket-card__info {
+    width: 85%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.jacket--card__description:hover {
+    font-weight: 700;
+}
+
+.fa-heart:hover {
+    cursor: pointer;
+}
+
+.jacket__name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.price {
+    width: 100%;
+    display: flex;
+}
+
 /* SIDEBAR CONTAINER */
 
 .sidebar__mobile{
     display: none;
 }
 
-/* SIDEBAR FILTER*/
-
 .sidebar-filter{
-    grid-area: sidebar;
     width: 200px;
 }
 
@@ -81,138 +130,12 @@ input[type=checkbox] {
     width: 16px;
 }
 
-/* CARDS */
-
-.jackets{
-    grid-area: jackets;
-    display: grid;
-    grid-gap: 60px 20px;
-    width: 93%;
-    margin-top: 20px;
-    margin-left: 70px;
-    grid-template-areas:
-    "jacket-1 jacket-2 jacket-3 jacket-4"
-    "jacket-5 jacket-6 jacket-7 jacket-8"
-    "jacket-9 jacket-10 jacket-11 jacket-12"
-    "new-page new-page new-page new-page";
-}
-
-.card1-jacket,
-.card2-jacket,
-.card3-jacket,
-.card4-jacket,
-.card5-jacket,
-.card6-jacket,
-.card7-jacket,
-.card8-jacket,
-.card9-jacket,
-.card10-jacket,
-.card11-jacket,
-.card12-jacket{
-    border-radius: var(--border-shadow);
-    box-shadow: var(--box-shadow);
-    border-radius: 0px 10px 10px 0px;
-}
-
-.card1-jacket{
-    grid-area: jacket-1;
-}
-
-.card2-jacket{
-    grid-area: jacket-2;
-}
-
-.card3-jacket{
-    grid-area: jacket-3;
-}
-
-.card4-jacket{
-    grid-area: jacket-4;
-}
-
-.card5-jacket{
-    grid-area: jacket-5;
-}
-
-.card6-jacket{
-    grid-area: jacket-6;
-}
-
-.card7-jacket{
-    grid-area: jacket-7;
-}
-
-.card8-jacket{
-    grid-area: jacket-8;
-}
-
-.card9-jacket{
-    grid-area: jacket-9;
-}
-
-.card10-jacket{
-    grid-area: jacket-10;
-}
-
-.card11-jacket{
-    grid-area: jacket-11;
-}
-
-.card12-jacket{
-    grid-area: jacket-12;
-}
-
-/* CARD IMG CONTAINER */
-
-.card-jacket__img--container{
-    width: auto;
-}
-  
-.card-jacket__img{
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-}
-
-/* CONTAINER BOX */
-
-.card-jacket__box{
-    padding: 20px;
-    display: grid;
-    grid-template-areas: 
-    "price favorites"
-    "description description";
-}
-
-.card-jacket__favorites{
-    grid-area: favorites;
-    text-align: end;
-}
-
-.card-jacket__price{
-    grid-area: price;
-    font-weight: var(--links__font-weight);
-}
-
-.card-jacket__description{
-    grid-area: description;
-}
-
-.card-jacket__description{
-    width: fit-content;
-    border-bottom: solid 3px white;
-}
-
-.card-jacket__description:hover{
-    color: black;
-    border-bottom: var(--border-bottom);
-}
-
 /* NUMBER AT THE BOTTOM */
-
 .new-page{
-    grid-area: new-page;
-    margin-top: 50px;
-    justify-self: center;
+    width: 85%;
+    margin-top: 50px auto;
+    display: flex;
+    justify-content: center;
 }
 
 .new-page__content{
@@ -229,9 +152,3 @@ input[type=checkbox] {
 .fa-chevron-right{
     cursor: pointer;
 }
-
-
-
-
-
-

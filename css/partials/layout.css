@@ -69,18 +69,19 @@ body {
 
 /* H1 CHECKOUT SUCCEED PAGE */
 
-.checkout{
-  grid-area: header;
-}
+/* .checkout{
+} */
 
 .confirmation{
-  grid-area: confirmation;
   margin-top: 10px;
 }
 
 
 /* LINKS */
-
 a{
   color: black;
+}
+
+.loading {
+  margin: 0px auto;
 }
