@@ -262,54 +262,44 @@
 
 .suggestion__container{
     width: 85%;
-    margin: auto;
-    margin-top: 100px;
-    grid-gap: 30px;
-    display: grid;
-    grid-template-areas: 
-    "jacket__cards--headline jacket__cards--headline view-more view-more"
-    "suggestion__card1 suggestion__card2 suggestion__card3 suggestion__card4"
-    ;
+    margin: 100px auto 50px auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .suggestion__headline{
-    grid-area: jacket__cards--headline;
     font-size: 1.5rem;
 }
 
-.suggestion__view-more{
-    grid-area: view-more;
-    justify-self: end;
+.suggestion__cards{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.suggestion__card1,
-.suggestion__card2,
-.suggestion__card3,
-.suggestion__card4{
-    border-radius: 10px;  
+.suggestion__card {
+    width: 24%;
+    height: auto;
+    border-radius: 10px;
     box-shadow: var(--box-shadow);
 }
 
-.suggestion__card1{
-    grid-area: suggestion__card1;
+.old__price {
+    text-decoration: line-through;
+    text-decoration-thickness: 0.15rem;
 }
 
-.suggestion__card2{
-    grid-area: suggestion__card2;
-}
-
-.suggestion__card3{
-    grid-area: suggestion__card3;
-}
-
-.suggestion__card4{
-    grid-area: suggestion__card4;
+.sale__price--text {
+    color: red;
+    font-size: 1.125rem;
 }
 
 /* CARD IMG */
-
 .suggestion__img--container{
-    width: auto;
+    width: 100%;
+    height: auto;
 }
   
 .suggestion__img{

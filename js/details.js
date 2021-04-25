@@ -32,28 +32,70 @@ async function jacketId(id) {
             <img class="jacket-big__img" src="${jacket.images[0].src}">
         `;
 
-        // for (let i = 0; i < jacket.length; i++) {
-        //     if (jacket.on_sale) {
-
-        //     }
-        //     jacket[i];
-        // }
-
     } catch (error) {
-        // document.querySelector('.alert') = showAlert(
-        //     'An error occured, please contact Noroff.no',
-        //     'danger'
-        // );
+        document.querySelector('.alert') = showAlert(
+            'An error occured, please contact Noroff.no',
+            'danger'
+        );
 
         console.log(error);
 
     } finally {
-        // setTimeout(function () {
-        //     document.querySelector('.alert').innerHTML = '';
-        // }, 3000);
+        setTimeout(function () {
+            document.querySelector('.alert').innerHTML = '';
+        }, 3000);
 
         document.querySelector('.loading').innerHTML = ``;
     }
 }
-
 jacketId(id);
+
+
+const jacketOnSale = async () => {
+    try {
+        const response = await fetch('https://noroffcors.herokuapp.com/https://api.bjornsendesign.tech/wp-json/wc/store/products/');
+        const onSale = await response.json();
+        console.log(onSale);
+
+        onSale.forEach(value => {
+            if (value.on_sale) {
+                document.querySelector('.suggestion__cards').innerHTML += `
+                    <div class="suggestion__card">
+                        <div class="suggestion__img--container">
+                            <img class="suggestion__img" src="${value.images[0].src}"/>
+                        </div>
+                        <div class="card__box">
+                            <div class="card__favorites">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="card__price">
+                                <p class="old__price">$ ${value.prices.regular_price}</p>
+                                <p class="sale__price--text">$ ${value.prices.sale_price}</p>
+                            </div>
+                            <div class="card__description">
+                                <p class="card__description--text">
+                                    <a href="jacket.html">Short Hooded Jacket</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+            };
+        });
+
+    } catch (error) {
+        document.querySelector('.alert').innerHTML = showAlert(
+            'An error occured',
+            'danger'
+        );
+        console.log(error);
+
+    } finally {
+        setTimeout(function () {
+            document.querySelector('.alert').innerHTML = ``;
+        }, 3000);
+        document.querySelector('.loading').innerHTML = ``;
+    }
+}
+
+jacketOnSale()

@@ -31,35 +31,18 @@ const rainydaysAPI = async () => {
         });
 
     } catch (error) {
-        // document.querySelector('.alert').innerHTML = showAlert(
-        //     'An error occured',
-        //     'danger'
-        // );
+        document.querySelector('.alert').innerHTML = showAlert(
+            'An error occured',
+            'danger'
+        );
         console.log(error);
 
     } finally {
-        // setTimeout(function () {
-        //     document.querySelector('.alert').innerHTML = ``;
-        // }, 3000);
+        setTimeout(function () {
+            document.querySelector('.alert').innerHTML = ``;
+        }, 3000);
         document.querySelector('.loading').innerHTML = ``;
     }
 };
 
 rainydaysAPI()
-
-// let buttons = document.querySelectorAll('.card__cta');
-// for (i = 0; i < buttons.length; i++) {
-//     buttons[i].addEventListener('click', (event) => {
-//         if (event.target.textContent == 'You picked me') {
-//             event.target.textContent = 'Pick me';
-//             event.target.style.color = 'var(--white)';
-//             event.target.style.backgroundColor = 'var(--dark-green)';
-//             event.target.style.border = 'none';
-//         } else {
-//             event.target.textContent = 'You picked me';
-//             event.target.style.color = 'var(--dark-green)';
-//             event.target.style.backgroundColor = 'var(--white)';
-//             event.target.style.border = 'solid 3px var(--dark-green)';
-//         }
-//     });
-// };
