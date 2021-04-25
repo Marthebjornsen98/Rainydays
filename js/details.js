@@ -17,7 +17,7 @@ async function jacketId(id) {
         `;
 
         document.querySelector('.price__jacket').innerHTML += `
-            $${jacket.prices.price}
+            $ ${jacket.prices.price}
         `;
 
         document.querySelector('.raincoat__color').innerHTML += `
@@ -31,6 +31,13 @@ async function jacketId(id) {
         document.querySelector('.jacket-big__container').innerHTML += `
             <img class="jacket-big__img" src="${jacket.images[0].src}">
         `;
+
+        // for (let i = 0; i < jacket.length; i++) {
+        //     if (jacket.on_sale) {
+
+        //     }
+        //     jacket[i];
+        // }
 
     } catch (error) {
         // document.querySelector('.alert') = showAlert(
