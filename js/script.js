@@ -13,7 +13,7 @@ const rainydaysAPI = async () => {
             document.querySelector('.jacket-list__container').innerHTML += `
             <div class="jacket__card">
                 <div class="jacket-card__img--container">
-                    <img class="jacket-card__img" src="${element.images[0].src}"/>
+                    <img class="jacket-card__img" src="./img/jacket-1.jpg"/>
                 </div>
                 <div class="jacket-card__info">
                     <div class="jacket__name">
