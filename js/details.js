@@ -11,6 +11,8 @@ async function jacketId(id) {
         const jacketResponse = await fetch('https://noroffcors.herokuapp.com/https://api.bjornsendesign.tech/wp-json/wc/store/products/' + id);
         const jacket = await jacketResponse.json();
 
+        console.log('jacket', jacket)
+
         document.title = jacket.name;
         document.querySelector('.raincoat-information').innerHTML += `
             ${jacket.name}
@@ -29,7 +31,7 @@ async function jacketId(id) {
         `
 
         document.querySelector('.jacket-big__container').innerHTML += `
-            <img class="jacket-big__img" src="${jacket.images[0].src}">
+            <img class="jacket-big__img" src="./img/jacket-1.jpg">
         `;
 
     } catch (error) {
@@ -62,7 +64,7 @@ const jacketOnSale = async () => {
                 document.querySelector('.suggestion__cards').innerHTML += `
                     <div class="suggestion__card">
                         <div class="suggestion__img--container">
-                            <img class="suggestion__img" src="${value.images[0].src}"/>
+                            <img class="suggestion__img" src="./img/jacket-2.jpg"/>
                         </div>
                         <div class="card__box">
                             <div class="card__favorites">
@@ -74,7 +76,7 @@ const jacketOnSale = async () => {
                             </div>
                             <div class="card__description">
                                 <p class="card__description--text">
-                                    <a href="jacket.html">Short Hooded Jacket</a>
+                                    <a href="jacket.html?id=375">Short Hooded Jacket</a>
                                 </p>
                             </div>
                         </div>
