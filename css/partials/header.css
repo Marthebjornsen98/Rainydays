@@ -91,12 +91,12 @@ header {
 
 .fa-user:hover,
 .fa-heart:hover,
-.fa-shopping-cart:hover{
+.fa-shopping-cart:hover {
   color: var(--font__opacity);
 }
 
 .cta__nav {
-  padding: 15px 35px;
+  padding: 12px 35px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -104,10 +104,9 @@ header {
   font-weight: var(--links__font-weight);
   color: var(--font-color);
   background-color: var(--background-color);
-  box-shadow: var(--box-shadow);
 }
 
-.cta__nav:hover{
+.cta__nav:hover {
   margin-bottom: 3px;
 }
 
